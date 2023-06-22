@@ -1,9 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
-body {
+
+body{
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    
+
 }
 .header-main{
     width: 99%;
@@ -174,6 +178,7 @@ body {
     
 }
 
+
 .judges-div{
   width: 10rem;
   height: 10rem;
@@ -183,19 +188,10 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
   filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
 
-  background-image: url("../statics/images/judges/j_01.jpg");
+
   background-size: 10rem auto;
 
   margin-bottom: 4rem;
-
-
-
-
-
-}
-
-.anoth-judge-img{
-  background-image: url("../statics/images/judges/j_02.jpg");
 
 }
 
@@ -222,7 +218,7 @@ body {
 
 
 
-.judges-div span {
+.judges-div-span {
   position: fixed;
   color: #ffffff;
   background-color: #000000;
@@ -345,7 +341,7 @@ body {
 
 
 
-.accordion ul li:nth-child(1) { background-image: url("../statics/images/woman02.jpg"); }
+.accordion ul li:nth-child(1) { background-image: url({% static './images/woman-01.jpg' %}); }
 .accordion ul li:nth-child(2) { background-image: url("../statics/images/woman-01.jpg"); }
 .accordion ul li:nth-child(3) { background-image: url("../statics/images/woman02.jpg"); }
 .accordion ul li:nth-child(4) { background-image: url("../statics/images/woman-01.jpg"); }

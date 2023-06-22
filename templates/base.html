@@ -1,25 +1,39 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
     <noscript>You Have to enable javascript to use this site!</noscript>
 
     <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        
-    <title>{{ title }}</title>
-</head>
-<body>
-    <iframe src="./Header/Header.html" class="header-frame"></iframe>
+    <link rel="stylesheet" href="{% static './style/Header.css' %}">
+    <link rel="stylesheet" href="{% static './style/style-custom.min.css' %}">
+    <link rel="stylesheet" href="{% static './style/Home.css' %}">
+
+
+
+
     
-    <iframe type="html/type" src="./Home/Home.html" class="home-frame"></iframe>
+    <title>{% block title %} {% endblock title %} </title>
+
+
+    <style>
+        body{
+            background: rgb(246, 243, 243);
+        }
+    </style>
+</head>
+
+<body>
+
+{% include './Header/Header.html' %}
+{% include './Home/Home.html' %}
+{% include './Footer/Footer.html' %}
+    
 </body>
 
-<script src="./script.js">
-
-</script>
 </html>
