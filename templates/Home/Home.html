@@ -1,8 +1,19 @@
 {% load static %}
 <html>
   <head>
+<style>
+  .marquee-content:hover {
+    cursor:pointer;
+    animation-play-state: paused;
+  }
+
+  
+  .marquee:hover .marquee-content {
+    animation-play-state: paused;
+  }
 
 
+</style>
   </head>
   <body>
 
@@ -84,70 +95,35 @@
           <h1>See More The Persian Girls' Hand!</h1>
           <div class="marquee">
 <div class="marquee-content"> 
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=01" alt="">
+  <div class="marquee-item" >
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=01" alt="" id="img-scroll">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=02" alt="">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=03" alt="">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=04" alt="">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=05" alt="">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=06" alt="">
   </div>
   
-  <div class="marquee-item">
+  <div class="marquee-item" id="img-scroll">
     <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
   </div>
   
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=08" alt="">
-  </div>
-  
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=01" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=02" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=03" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=04" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=05" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=06" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-  </div>
-  
-  <div class="marquee-item">
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=08" alt="">
-  </div>
+
 </div>
 </div>
       </section>
@@ -191,5 +167,9 @@
 
 
   </body>
+
+  <script>
+
+  </script>
 </html>
 
