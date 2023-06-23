@@ -31,11 +31,16 @@
 </head>
 
 <body>
-
-{% include './Header/Header.html' %}
-{% include './Home/Home.html' %}
-{% include './Footer/Footer.html' %}
     
+        {% block header %}{% endblock %}
+    
+    
+        {% block content %}{% endblock %}
+    
+    
+        {% block footer %}{% endblock %}
+   
+
 </body>
 
 </html>

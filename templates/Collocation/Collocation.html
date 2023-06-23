@@ -1,26 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!---       Header      -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    - collocation
+{% endblock %}
+
+{% block header %}
+    {% include '../Header/Header.html' %}
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <main>
+        
+      <section class="main-first colo-section" stytle="display:grid; place-items: center;">
+          <div class="colo-div">
+       ‍‍‍       <div class="h1-bg colo-img" style="width:200%;">
+                  <h1>NAME</h1>
+              </div>
+
+              <div class="h1-bg colo-img">
+                <h1>NAME</h1>
+            </div>
+            <div style="width:1%;"></div>
+        </div>           
+      </section>
+
+      
+
+
+
+  </main>
 
 
 
 
-    <!---       Header      -->
 
 
 
 
 
+  </body>
 
-    <!--        Footer        -->
+  <script>
 
-    
-    <!--        Footer        -->
-</body>
+  </script>
 </html>
+
+
+{% endblock %}
+
+{% block footer %}
+    {% include '../Footer/Footer.html' %}
+{% endblock %}

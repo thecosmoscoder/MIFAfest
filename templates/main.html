@@ -1,0 +1,32 @@
+{% extends './base.html' %}
+{% load static %}
+
+
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+    {% block header %}
+    {% include './Header/Header.html' %}
+    {% endblock %}
+
+    {% block content %}
+    {% include './Home/Home.html' %}
+    {% endblock %}
+
+
+    {% block footer %}
+    {% include './Footer/Footer.html' %}
+    {% endblock %}
+
+
+
+
+    
+
+</body>
+
+</html>

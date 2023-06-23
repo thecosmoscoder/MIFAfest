@@ -1,0 +1,14 @@
+
+.colo-div{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    
+    grid-gap: 6pc;
+    place-items: center;
+    width: 98%;
+    margin-top: 2em;
+}
+
+.colo-img{
+    width: 100%;
+}
