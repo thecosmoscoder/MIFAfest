@@ -1,14 +1,22 @@
-
-.colo-div{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr ;
-    
-    grid-gap: 6pc;
-    place-items: center;
-    width: 98%;
-    margin-top: 2em;
+.removal-section{
+    box-shadow: none;
 }
 
-.colo-img{
-    width: 100%;
+
+.colo-frame{
+    display: flex;
+}
+
+.colo-frame-static{
+    display: flex;
+    font-size: 8rem;
+    border: 1px solid #000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+}
+
+
+.img-colo{
+    display: flex;
+    width: 60px;
+    height: auto;
 }
