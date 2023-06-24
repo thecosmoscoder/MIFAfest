@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{% static './style/Header.css' %}">
     <link rel="stylesheet" href="{% static './style/style-custom.min.css' %}">
     <link rel="stylesheet" href="{% static './style/Home.css' %}">
+    
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static './Favicon/apple-touch-icon.png' %}">
@@ -27,11 +28,13 @@
     
     <title>{% block title %} {% endblock title %} </title>
 
-
+{% block head %}{% endblock head %}
     <style>
         body{
             background: rgb(246, 243, 243);
         }
+
+
     </style>
 </head>
 
