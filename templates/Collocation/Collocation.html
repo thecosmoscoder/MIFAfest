@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block title %}
     - collocation
 {% endblock %}
@@ -13,6 +14,24 @@
 {% load static %}
 <html>
   <head>
+<style>
+
+  .hover-style{
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+</style>
+
+<script>
+  $('#info-colo').hover(
+   () {
+      $(this).addClass('hover-style');
+    }, function() {
+      $(this).removeClass('hover-style');
+    }
+  );
+</script>
 
   </head>
   <body>
@@ -24,23 +43,41 @@
       </section>
 
 
-      <section class="colo-frame">
+      <div class="colo-frame">
         
-          ‍‍‍       <div calss="colo-frame-static img-colo">
-                     <img src="{% static './images/colo-sample.jpg' %}" alt="" style="max-width: 70%;"/>
+          ‍‍‍       <div calss="img-colo" style="
+          border: 1px solid  rgba(0,0,0,0.3);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.3);
+          border-radius: 15px;
+          width:60%;
+          overflow:hidden;
+          margin-top: 5rem;
+                  ">
+                     <img src="{% static './images/colo-sample.jpg' %}" alt="" style="max-width: 100%; z-index: -1; display: block"/>
                  </div>
    
-                 <div calss="colo-frame-static info-colo" >
-                   <h1>INFO</h1>
-                </div>
-
+                 <div id="info-colo" style="
+                 border: 1px solid  rgba(0,0,0,0.3);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.3);
+          border-radius: 15px;
+          height:auto;
+          overflow:hidden;
+          position: absolute;
+          margin-top: 4rem;
+          right:15%;
+          padding: 0 1rem 0 1rem;
+          background-color: rgba(0,0,0,0.2);
 
 
           
-           
-           
-      </section>
-      <h3>click on image to see preview.</h3>
+                 ">
+                   <h1>Star In Street</h1>
+                   <h3>by: mahla ma</h3>
+                </div>  
+      </div>
+
+
+      <h2>click on image to see preview.</h2>
 
       
 
@@ -58,9 +95,7 @@
 
   </body>
 
-  <script>
 
-  </script>
 </html>
 
 
