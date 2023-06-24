@@ -1,6 +1,4 @@
-.removal-section{
-    box-shadow: none;
-}
+
 
 
 .colo-frame{
@@ -9,7 +7,7 @@
    
 }
 
-.colo-frame h1, h3{
+.colo-frame h1, .colo-frame h3{
     text-transform: uppercase;
     text-align: center;
     color: rgba(255, 255, 255, 0.6);

@@ -8,37 +8,37 @@
 
 {% block header %}
     {% include '../Header/Header.html' %}
+    <style>
+
+      .hover-style{
+        background-color: rgba(0,0,0,0.8);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    </style>
+
+    <script>
+      $('#info-colo').hover(
+       () {
+          $(this).addClass('hover-style');
+        }, function() {
+          $(this).removeClass('hover-style');
+        }
+      );
+    </script>
+    
+    
 {% endblock %}
 
 {% block content %}
 {% load static %}
 <html>
-  <head>
-<style>
 
-  .hover-style{
-    background-color: rgba(0,0,0,0.8);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-</style>
-
-<script>
-  $('#info-colo').hover(
-   () {
-      $(this).addClass('hover-style');
-    }, function() {
-      $(this).removeClass('hover-style');
-    }
-  );
-</script>
-
-  </head>
   <body>
 
     <main>
         
-      <section class="main-first removal-section" stytle="display:grid; place-items: center;">
+      <section class="main-first " style="display:grid; place-items: center; box-shadow: none;">
           
       </section>
 
@@ -67,9 +67,6 @@
           right:15%;
           padding: 0 1rem 0 1rem;
           background-color: rgba(0,0,0,0.2);
-
-
-          
                  ">
                    <h1>Star In Street</h1>
                    <h3>by: mahla ma</h3>
