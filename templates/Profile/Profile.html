@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}MIFAfest - Profile{% endblock %}
+{% block head %}
+<style>
+.sect-img-profile{
+    
+    display:flex;
+    justify-content: center;
+
+}
+
+.profile-container{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+    border-radius: 40px;
+    width:55%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.img-contai{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.text-profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 3em;
+    font-size: larger;
+}
+
+.more-works .works-contain{    
+    display: flex;
+    justify-content: center;
+}
+.more-works div{
+    
+width: 100px;
+height: 100px;
+overflow: hidden;
+margin: 20px;
+}
+.more-works div:hover{
+cursor: pointer;
+}
+
+</style>
+{% endblock head %}
+
+
+
+
+
+{% block header %}
+{% include '../Header/Header.html' %}
+{% endblock header %}
+
+{% block content %}
+{% load static %}
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <main>
+        <section class="main-first" style="box-shadow: none;"></section>
+
+
+
+
+
+    <section class='sect-img-profile'> 
+
+    <div class="profile-container">
+        <div class="img-contai">
+            
+            <div style="
+            border-radius: 50%;
+            height: 200px;
+            width:200px;
+            overflow: hidden;
+            position: absolute;
+            left: 5%;
+            top: 33%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+
+
+            ">
+            <img src="{% static './images/profile-icon.jpg'%}" alt=""  style="
+            height: 200px;
+            width:200px;
+            "/>
+            </div>
+        </div>
+
+        <div class="text-profile">
+        <h1>Mariam A.</h1>
+
+        <section class="social-logos" style="background-color: rgb(246, 243, 243);;">
+
+        <img src="{% static './images/social-icons/instagram.png' %}" alt="" />
+        <img src="{% static './images/social-icons/facebook.png' %}" alt="" />
+        <img src="{% static './images/social-icons/pinterest.png' %}" alt="" />
+        <img src="{% static './images/social-icons/twitter.png' %}" alt="" />
+       
+    </section>
+
+        <div style="display: flex;">
+        <h3 style="margin-right: 1em;"> Painter </h3>
+        <h4> (Classic)</h4>
+        
+        </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+<section class="profile-container more-works" style="width: 40%; margin-left: 20px; max-height: 70%;">
+
+<h2>Mariam's Work</h2>
+
+<section class="works-contain">
+<div>
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+</div>
+<div>
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+</div>
+<div>
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+</div>
+</section>
+
+</section>
+
+    </section>
+
+
+
+
+<section>
+<h1>know more about Mariams.</h1>
+</section>
+
+
+
+<section>
+<h1>see more</h1>
+</section>
+
+
+
+
+
+ 
+  </main>
+
+
+
+
+  </body>
+
+  <script>
+
+  </script>
+</html>
+
+
+{% endblock%}
+
+
+
+{% block footer %}
+{% include '../Footer/Footer.html' %}
+{% endblock %}
+
+
+
+
+
+
+
+
+<!-- <div calss="back-img" style="
+    width: 100%;
+    height: 40vh;
+    overflow:hidden;
+    border-radius: 40px 40px 0 0 ;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+    z-index: -1;
+            ">
+                <img src="{% static './images/def-background.jpeg'%}" alt="" style="width: 100%;"/>
+            </div> 
+
+
+            !-->

@@ -19,10 +19,12 @@ from django.views.generic.base import TemplateView  # Corrected here
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='./main.html')),
+    path('', TemplateView.as_view(template_name='./main.html'), name='home'),
     path('test/', TemplateView.as_view(template_name='./Home/Home.html')),
-    path('collocation/', TemplateView.as_view(template_name='./Collocation/Collocation.html')),
-    path('auth/', TemplateView.as_view(template_name='./Auth/Auth.html')),
+    path('collocation/', TemplateView.as_view(template_name='./Collocation/Collocation.html'), name='collocation'),
+    path('auth/', TemplateView.as_view(template_name='./Auth/Auth.html'), name='auth'),
+    path('profile/', TemplateView.as_view(template_name='./Profile/Profile.html'), name='profile'),
+
 
 
 
