@@ -48,6 +48,63 @@ margin: 20px;
 cursor: pointer;
 }
 
+.edit-btn{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color:rgb(53, 53, 53);
+}
+.edit-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 8px;
+    color:rgb(97, 97, 97);
+}
+
+
+.bottom-sec{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    
+
+    margin-top: 2em;
+}
+
+.bottom-sec div{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+    border-radius: 40px;
+    width:90%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.know-more-div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+.bio-artist{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
+    border-radius: 40px;
+    max-width:50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.artist-album img{
+    width: 200px;
+    height: 200px;
+}
+
+.artist-album p{
+    color: rgb(97, 97, 97);
+}
+.artist-album p:hover{
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+}
 </style>
 {% endblock head %}
 
@@ -101,7 +158,7 @@ cursor: pointer;
         <div class="text-profile">
         <h1>Mariam A.</h1>
 
-        <section class="social-logos" style="background-color: rgb(246, 243, 243);;">
+        <section class="social-logos" style="background-color: rgb(246, 243, 243);">
 
         <img src="{% static './images/social-icons/instagram.png' %}" alt="" />
         <img src="{% static './images/social-icons/facebook.png' %}" alt="" />
@@ -117,6 +174,9 @@ cursor: pointer;
         </div>
 
 
+        <h4 class="edit-btn">Edit Profile</h4>
+
+
         </div>
 
     </div>
@@ -127,7 +187,7 @@ cursor: pointer;
 
 <section class="profile-container more-works" style="width: 40%; margin-left: 20px; max-height: 70%;">
 
-<h2>Mariam's Work</h2>
+<h2>Mariam's Work{majors}</h2>
 
 <section class="works-contain">
 <div>
@@ -148,15 +208,68 @@ cursor: pointer;
 
 
 
-<section>
-<h1>know more about Mariams.</h1>
+<section class="bottom-sec">
+
+
+
+<div class="know-more-div">
+    <h1>Bio</h1>
+
+    <div class="bio-artist">
+    <p>This dictionary definitions page includes all the possible meanings, example usage and translations of the word dorem.</p>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="artist-album" id="artistAlbum">
+    <h1>All Photo Of Mariam</h1>
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    
+
+    <p id="seeMore">See More</p>
+    <p id="showLess" style="display: none;">Show Less</p>
+</div>
+
+
+
+<div class="artist-album" id="artistAlbum2">
+    <h1>More from persian's</h1>
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+    
+
+    <p id="seeMore2">See More</p>
+    <p id="showLess2" style="display: none;">Show Less</p>
+</div>
+
+
+
+
 </section>
 
-
-
-<section>
-<h1>see more</h1>
-</section>
 
 
 

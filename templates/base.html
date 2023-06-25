@@ -62,6 +62,48 @@
 
 
 
+
+
+          $(document).ready(function(){
+            $("#artistAlbum img:gt(3)").hide();
+          
+            $("#seeMore").click(function(){
+              // Show the rest of the images when the paragraph is clicked
+              $("#artistAlbum img").show();
+              $("#seeMore").hide();
+              $("#showLess").css("display", "grid");
+            });
+          
+            $("#showLess").click(function(){
+              // Hide the images with an index greater than 3
+              $("#artistAlbum img:gt(3)").hide();
+              $("#showLess").hide();
+              $("#seeMore").show();
+            });
+          });
+
+
+          $(document).ready(function(){
+            $("#artistAlbum2 img:gt(3)").hide();
+          
+            $("#seeMore2").click(function(){
+              // Show the rest of the images when the paragraph is clicked
+              $("#artistAlbum2 img").show();
+              $("#seeMore2").hide();
+              $("#showLess2").css("display", "grid");
+            });
+          
+            $("#showLess2").click(function(){
+              // Hide the images with an index greater than 3
+              $("#artistAlbum2 img:gt(3)").hide();
+              $("#showLess2").hide();
+              $("#seeMore2").show();
+            });
+          });
+          
+          
+
+
     </script>
 </head>
 
