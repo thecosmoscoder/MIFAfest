@@ -9,7 +9,7 @@ class CustomUser(AbstractUser):
     country = CountryField(blank_label="(select country)")
 
     def __str__(self):
-        return f"{self.firstname} {self.last_name}"
+        return f"{self.first_name} {self.last_name}"
 
     def get_absolute_url(self):
         return reverse('users_view', args=[self.id])

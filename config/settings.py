@@ -34,7 +34,11 @@ LOCAL_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-
+    'django_countries',
+    'allauth',
+    'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.google',
 ]
 
 INSTALLED_APPS = [
@@ -47,6 +51,8 @@ INSTALLED_APPS = [
     *LOCAL_APPS,
     *THIRD_PARTY_APPS
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,6 +81,14 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    # Django allauth
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+EMAIL_BACKEND = 'django.core.mail.backends.consol.EmailBackend'
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
@@ -137,5 +151,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Custom User setting
+# Custom User settings
 AUTH_USER_MODEL = 'users.CustomUser'
+
+# Allauth setiings
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
