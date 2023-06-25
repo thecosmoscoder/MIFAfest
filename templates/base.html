@@ -36,6 +36,33 @@
 
 
     </style>
+
+    <script>
+        $(document).ready(function() {
+            // Add a click event handler to the h4 element
+            $("#h4-signin").click(function() {
+              // Remove the element with the ids"
+              $("span").css("display", "flex");
+              $("#userName").remove();
+              $("#auth-h1-text").text("MIFAfest - Sign In");
+              $("#google-text-signin").text("Sign In With Google");
+              $("#signin-btn").val("SIGN IN");
+              
+              $("#h4-signin").remove()
+
+            });
+
+
+
+            $("span").click(function() {
+              // Reload the page
+              location.reload(true);
+            });
+          });
+
+
+
+    </script>
 </head>
 
 <body>

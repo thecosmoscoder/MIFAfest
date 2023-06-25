@@ -3,6 +3,9 @@
 {% block title %}MIFAfest{% endblock title %}
 
 {% block head %}
+
+
+
 <style>
 
 
@@ -94,11 +97,19 @@ input[type="submit"]:active {
     width: 80%;
     padding-left: 10px;
     color: rgb(81, 83, 85); 
-    
-    
 
 }
+
+.google-btn #registerRefresh{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(43, 43, 43);
+}
 </style>
+
+
 {% endblock head %}
 
 {% block header %}
@@ -123,23 +134,44 @@ input[type="submit"]:active {
         margin-top:4em;
 
         ">
-            <h1>MIFAfest - Sign up</h1>
+            <a href="/"><h1 id="auth-h1-text">MIFAfest - Register</h1></a>
+
+            
 
             <hr />
             <div class="google-btn">
                     
                 <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
               
-              <p class="btn-text"><b>Sign Up With Google</b></p>
+              <p class="btn-text" id="google-text-signin"><b>Sign Up With Google</b></p>
             </div>
             <h3>or</h3>
                   
-                  <input type="text" name="username" placeholder="Username" />
+                  <input type="text" name="username" placeholder="Username" id="userName"/>
                   <input type="text" name="email" placeholder="E-mail" />
                   <input type="password" name="password" placeholder="Password" />
-                  <input type="password" name="password2" placeholder="Retype password" />
+    
                   
-                  <input type="submit" name="signup_submit" value="Sign me up" />
+                  <input type="submit" name="signup_submit" value="Sign me up" id="signin-btn"/>
+
+
+                  
+
+                  <div class="google-btn" style="
+                  color: rgb(81, 83, 85);
+                  padding-top:-20px;
+                  width: 90px;
+                  height: 40px;
+                  border: none;
+                  box-shadow: none;
+                  margin-bottom: 1em;
+                  " 
+                  id="signin-btn-jq"
+                  ><h4 id="h4-signin">SIGN IN</h4>
+
+                  <span id="#registerRefresh" style="display:none; font-size: larger;">Register</span>
+                
+                </div>
 
 
                   
@@ -156,3 +188,6 @@ input[type="submit"]:active {
 
 
 {% block footer %}{% endblock %}
+
+
+
