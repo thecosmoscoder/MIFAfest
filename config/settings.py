@@ -29,6 +29,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+LOCAL_APPS = [
+    'users',
+]
+
+THIRD_PARTY_APPS = [
+
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    *LOCAL_APPS,
+    *THIRD_PARTY_APPS
 ]
 
 MIDDLEWARE = [
@@ -127,3 +136,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom User setting
+AUTH_USER_MODEL = 'users.CustomUser'
