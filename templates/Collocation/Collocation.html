@@ -5,27 +5,19 @@
 {% block title %}
     - collocation
 {% endblock %}
+{% block head %}
+<style>
+
+</style>
+
+<script>
+  
+</script>
+
+{% endblock head%}
 
 {% block header %}
     {% include '../Header/Header.html' %}
-    <style>
-
-      .hover-style{
-        background-color: rgba(0,0,0,0.8);
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-    }
-    </style>
-
-    <script>
-      $('#info-colo').hover(
-       () {
-          $(this).addClass('hover-style');
-        }, function() {
-          $(this).removeClass('hover-style');
-        }
-      );
-    </script>
     
     
 {% endblock %}
@@ -57,7 +49,7 @@
                  </div>
    
                  <div id="info-colo" style="
-                 border: 1px solid  rgba(0,0,0,0.3);
+          border: 1px solid  rgba(0,0,0,0.3);
           box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.3);
           border-radius: 15px;
           height:auto;

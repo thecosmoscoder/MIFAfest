@@ -11,12 +11,15 @@
     <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="{% static './style/Auth.css' %}">
+    
+
     <link rel="stylesheet" href="{% static './style/Collocation.css' %}">
     <link rel="stylesheet" href="{% static './style/Header.css' %}">
     <link rel="stylesheet" href="{% static './style/style-custom.min.css' %}">
     <link rel="stylesheet" href="{% static './style/Home.css' %}">
     
+
+
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="{% static './Favicon/apple-touch-icon.png' %}">
@@ -34,10 +37,21 @@
             background: rgb(246, 243, 243);
         }
 
+        header{
+          z-index: 200;
+        }
 
     </style>
 
     <script>
+
+
+// home
+
+
+
+
+// auth page
         $(document).ready(function() {
             // Add a click event handler to the h4 element
             $("#h4-signin").click(function() {
@@ -61,7 +75,7 @@
           });
 
 
-
+// profile
 
 
           $(document).ready(function(){
@@ -101,8 +115,10 @@
             });
           });
           
-          
 
+
+// collocation
+          
 
     </script>
 </head>

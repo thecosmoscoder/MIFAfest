@@ -33,7 +33,7 @@ body{
 }
 .main-first h1{
     
-    font-size: 8rem;
+    font-size: 6rem;
     animation: changebk 10s infinite alternate linear;
 }
 
@@ -46,6 +46,9 @@ body{
 
 
 }
+
+
+
 
 
 @keyframes changebk {
