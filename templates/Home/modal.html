@@ -1,0 +1,48 @@
+{% load static %}
+
+
+
+
+<html>
+
+<head>
+<style>
+.modal{
+    position: sticky;
+}
+    .modal img{
+        width: 30%;
+        height: 60%;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="ex1" class="modal">
+  <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=modal" alt="" id="img-scroll">
+
+  <h1>Description</h1>
+  <p>lorem lorem good lorem</p>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#modalBTN").click(function(){
+        $("header").hide();
+    });
+
+   
+
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

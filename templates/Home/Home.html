@@ -37,6 +37,8 @@
   <body>
 
     <main>
+    {% include "./modal.html" %}
+
         
       <section class="main-first">
           
@@ -136,10 +138,8 @@
 
 
 
-
-
             
-
+<!-- Hadi take care on modals!-->
           
       </section>
 
@@ -148,7 +148,7 @@
           <div class="marquee">
 <div class="marquee-content"> 
   <div class="marquee-item" >
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=01" alt="" id="img-scroll">
+    <a href="#ex1" rel="modal:open" id="modalBTN"><img src="https://via.placeholder.com/600/000000/FFFFFF/?text=modal" alt="" id="img-scroll"></a>
   </div>
   
   <div class="marquee-item" id="img-scroll">
