@@ -32,7 +32,8 @@ body{
     
 }
 .main-first h1{
-    
+  font-family: 'Rubik', sans-serif;
+
     font-size: 6rem;
     animation: changebk 10s infinite alternate linear;
 }
@@ -110,7 +111,7 @@ body{
   
   .marquee-content {
     display: flex;
-    animation: scrolling 20s linear infinite;
+    animation: scrolling 40s linear infinite;
     animation-play-state: running;
 
   }
@@ -135,7 +136,8 @@ body{
   
   @keyframes scrolling {
     0% { transform: translateX(0); }
-    100% { transform: translatex(-100vw); }
+    50% { transform: translatex(-100vw); }
+    100% { transform: translatex(0vw); }
   }
   
     

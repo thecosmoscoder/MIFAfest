@@ -1,38 +1,89 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-{% block title %}
-    - collocation
-{% endblock %}
+{% block title %}stary night - colloction{% endblock %}
 {% block head %}
 <style>
 
+.artist-album img{
+    width: 200px;
+    height: 200px;
+}
+
+.artist-album p{
+    color: rgb(97, 97, 97);
+}
+.artist-album p:hover{
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+}
+
+
+
+
+/*cards */
+.card{
+    width: 30rem;
+    font-family: 'Rubik', sans-serif;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "stack";
+    border-radius: 30px;
+    margin-top: 4rem;
+}
+.card img{
+    width: 30rem;
+}
+.card > * {
+    grid-area: stack;
+}
+
+.card > figcaption{
+    display: grid;
+    align-items: end;
+    padding: 1.5rem 2rem;
+    
+    z-index: 1;
+    position: absolute;
+}
+
+
+.card figcaption{
+    opacity: 0;
+    transition: opacity 300ms;
+}
+.card:hover , .card:hover figcaption{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
 </style>
+{% endblock head %}
 
-<script>
-  
-</script>
 
-{% endblock head%}
+
+
 
 {% block header %}
-    {% include '../Header/Header.html' %}
-    
-    
-{% endblock %}
+{% include '../Header/Header.html' %}
+{% endblock header %}
 
 {% block content %}
 {% load static %}
 <html>
+  <head>
 
+  </head>
   <body>
 
     <main>
         
-      <section class="main-first " style="display:grid; place-items: center; box-shadow: none;">
+
+      <section class="main-first" style="display:grid; place-items: center; box-shadow: none;">
           
-      </section>
+      
 
 
       <div class="colo-frame">
@@ -56,40 +107,97 @@
           overflow:hidden;
           position: absolute;
           margin-top: 4rem;
-          right:15%;
+          
           padding: 0 1rem 0 1rem;
           background-color: rgba(0,0,0,0.2);
                  ">
-                   <h1>Star In Street</h1>
+                   <h1>The Starry Night</h1>
                    <h3>by: mahla ma</h3>
                 </div>  
       </div>
 
 
-      <h2>click on image to see preview.</h2>
 
+
+        <div class="images-colo">
+
+        <figure class="card">
+            <img src="{% static './images/colo-sample.jpg' %}" alt="" />
+            <figcaption>caption</figcaption>
+        </figure>
+       
+       </div>
+      
+
+
+       <div class="similir-colo">
+
+
+        <figure class="card">
+            <img src="" alt="" />
+            <figcaption>caption</figcaption>
+        </figure>
+       
+       
+       </div>
       
 
 
 
+      <div class="artist-album" id="artistAlbum">
+        <h1>All Photo Of Mahla</h1>
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
+        
+    
+        <p id="seeMore">See More</p>
+        <p id="showLess" style="display: none;">Show Less</p>
+    </div>
+    
+
+</section>
+
+
+
+
+
+
+
+ 
   </main>
-
-
-
-
-
 
 
 
 
   </body>
 
+  <script>
 
+  </script>
 </html>
 
 
-{% endblock %}
+{% endblock%}
+
+
 
 {% block footer %}
-    {% include '../Footer/Footer.html' %}
+{% include '../Footer/Footer.html' %}
 {% endblock %}
+
+
+
+
+
+
+
+
