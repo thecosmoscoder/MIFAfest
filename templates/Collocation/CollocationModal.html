@@ -15,14 +15,29 @@
 
 
 <body>
-<button class="bnnny">ff</button>
+
 </body>
 
 <script>
 $(document).ready(function(){
     $('.imgReview').click(function(){
-        $().simpleModal();
+        $().simpleModal({
+
+            name: 'example',
+            title: 'preview',
+            content: '<img src="{% static './images/colo-sample.jpg' %}" alt="" style="width:100%;">',
+            size: 'large', // or integer for px
+            freeze: true,
+            callback: function() {
+            $('.simple-modal--example .imgReview').click(function() {
+             console.log('Click from modal');
+      });
+    }
+        });
     });
 });
+
+
+
 </script>
 </html>
