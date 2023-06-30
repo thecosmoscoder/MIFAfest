@@ -3,7 +3,9 @@
     --items: 4; /* Number of items you have */
     --item-width: calc(var(--menu-width) / var(--items));
 }
-
+.logo-div h1:hover{
+    cursor: pointer;
+}
 header{
     background-color: rgb(246 243 243);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
