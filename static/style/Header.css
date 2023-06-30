@@ -425,7 +425,7 @@ header{
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(90deg,#03f46f,#1fe00d,#03a9f4,#03f46f);
+    background: linear-gradient(90deg,#03a9f4,#1064ff,#0207ff,#03a9f4);
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
@@ -436,7 +436,7 @@ header{
   }
   
   .sighn-up-btn:active {
-    background: linear-gradient(32deg,#03f46f,#1fe00d,#03a9f4,#03f46f);
+    background: linear-gradient(32deg,#03a9f4,#1064ff,#0207ff,#03a9f4);
   }
 
 
