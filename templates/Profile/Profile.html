@@ -105,6 +105,87 @@ cursor: pointer;
     color: rgb(155, 155, 155);
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* others style*/
+.prof-body {
+  overflow-x: hidden;
+  
+}
+
+.banner {
+  position: relative;
+}
+
+.banner > .head-prof {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  background: rgb(0 0 0 / 30%);
+}
+
+.banner > .head-prof img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.banner h2 {
+  margin: 0 0 10px;
+  font-size: 60px;
+  color: rgb(255 255 255 / 80%);
+}
+
+.banner h3 {
+  margin: 0;
+  font-size: 40px;
+  color: rgb(255 255 255 / 60%);
+}
+
+.main {
+  padding: 50px 10%;
+  font-size: 30px;
+}
+
+.main p {
+  margin: 0 0 60px;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.images {
+  display: flex;
+}
+
+.images > img {
+  flex-shrink: 0;
+  width: 65vw;
+  height: auto;
+  filter: grayscale(0.86);
+}
+
+
+
 </style>
 {% endblock head %}
 
@@ -127,100 +208,53 @@ cursor: pointer;
     <main>
         <section class="main-first" style="box-shadow: none;"></section>
 
-
-
-
-
-    <section class='sect-img-profile'> 
-
-    <div class="profile-container">
-        <div class="img-contai">
-            
-            <div style="
-            border-radius: 50%;
-            height: 200px;
-            width:200px;
-            overflow: hidden;
-            position: absolute;
-            left: 5%;
-            top: 33%;
-            box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 4px 7px rgba(0,0,0,0.3);
-            border: solid 1px rgb(141, 141, 141);
-
-
-            ">
-            <img src="{% static './images/ex-pro.jpeg'%}" alt=""  style="
-            height: 200px;
-            width:200px;
-            "/>
-            </div>
+<div class="prof-body">
+<section class="banner">
+      <div class="head-prof">
+        <div>
+          <h2>Mahla</h2>
+          <h3>oil painter</h3>
         </div>
-
-        <div class="text-profile">
-        <h1>Mariam A.</h1>
-
-        <section class="social-logos" style="background-color: rgb(246, 243, 243);">
-
-        <img src="{% static './images/social-icons/instagram.png' %}" alt="" />
-        <img src="{% static './images/social-icons/facebook.png' %}" alt="" />
-        <img src="{% static './images/social-icons/pinterest.png' %}" alt="" />
-        <img src="{% static './images/social-icons/twitter.png' %}" alt="" />
-       
+        <img src="{% static './images/ex-pro.jpeg' %}" />
+      </div>
+      <div class="images">
+        <img height="874" src="{% static './images/profile/1.jpg' %}" width="1240" />
+        <img height="874" src="{% static './images/profile/2.jpg' %}" width="1240" />
+        <img height="874" src="{% static './images/profile/3.jpg' %}" width="1240" />
+        <img height="874" src="{% static './images/profile/1.jpg' %}" width="1240" />
+      </div>
     </section>
 
-        <div style="display: flex;">
-        <h3 style="margin-right: 1em;"> Painter </h3>
-        <h4> (Classic)</h4>
-        
-        </div>
+    <div class="main">
+      <h2>Intro</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id
+        aspernatur doloremque! Natus iure ea aliquam laborum nemo! Accusamus
+        officiis aspernatur optio asperiores modi excepturi, dicta id
+        necessitatibus nam perferendis!
+      </p>
+      <h2>Skills</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id
+        aspernatur doloremque! Natus iure ea aliquam laborum nemo! Accusamus
+        officiis aspernatur optio asperiores modi excepturi, dicta id
+        necessitatibus nam perferendis!
+      </p>
 
 
-        <h4 class="edit-btn">Edit Profile</h4>
 
-
-        </div>
-
-    </div>
-
-
-
-
-
-<section class="profile-container more-works" style="width: 40%; margin-left: 20px; max-height: 70%;">
-
-<h2>Mariam's Work{majors}</h2>
-
-<section class="works-contain">
-<div>
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
 </div>
-<div>
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-</div>
-<div>
-    <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-</div>
-</section>
 
-</section>
 
-    </section>
+
+
+
+
 
 
 
 
 <section class="bottom-sec">
-
-
-
-<div class="know-more-div">
-    <h1>Bio</h1>
-
-    <div class="bio-artist">
-    <p>This dictionary definitions page includes all the possible meanings, example usage and translations of the word dorem.</p>
-    </div>
-</div>
-
 
 
 
@@ -285,6 +319,24 @@ cursor: pointer;
   </body>
 
   <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.utils.toArray(".banner").forEach((section, index) => {
+  const w = section.querySelector(".images");
+  const [x, xEnd] = [w.scrollWidth * -1, 0];
+  gsap.fromTo(
+    w,
+    { x },
+    {
+      x: xEnd,
+      scrollTrigger: {
+        trigger: section,
+        scrub: 1,
+      },
+    }
+  );
+});
 
   </script>
 </html>
