@@ -6,17 +6,17 @@ from .forms import CustomUserChangeForm, CustomUserCreationForm
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-
+    ''' Creation Form'''
     add_form = CustomUserCreationForm 
     add_fieldsets = UserAdmin.add_fieldsets + ( 
         (None, {'fields': ('age', 'country',)}),
     )
-
+    ''' Change Form '''
     form = CustomUserChangeForm  
     fieldsets = UserAdmin.fieldsets + (  
         (None, {'fields': ('age', 'country',)}),
     )
-
+    ''' List of fileds that display in Users administration '''
     list_display = (
         'id',
         'username',
