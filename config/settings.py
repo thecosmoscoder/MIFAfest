@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 LOCAL_APPS = [
     'users',
+    'artgallery',
 ]
 
 THIRD_PARTY_APPS = [

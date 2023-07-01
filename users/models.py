@@ -13,4 +13,3 @@ class CustomUser(AbstractUser):
 
     def get_absolute_url(self):
         return reverse('users_view', args=[self.id])
-    
