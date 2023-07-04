@@ -74,7 +74,8 @@ body{
 
 .main-first h2{
   color: rgb(99, 99, 99);
-  width: 70%;
+  width: 100%;
+  margin-top: 25rem;
 }
 
 .main-first span{
@@ -88,7 +89,9 @@ body{
     cursor: pointer;
 }
 
-
+.main-first span{
+  margin-bottom: 2rem;
+}
 
 
 /* section slider */
@@ -237,122 +240,6 @@ body{
 
 
 
-/*  acardeon itroduction */
-
-.accordion {
-  width: 100%;
-  max-width: 1080px;
-  height: 250px;
-  overflow: hidden;
-  margin: 50px auto;
-
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
-  
-}
-.accordion ul {
-  width: 100%;
-  display: table;
-  table-layout: fixed;
-  margin: 0;
-  padding: 0;
-}
-.accordion ul li {
-  display: table-cell;
-  vertical-align: bottom;
-  position: relative;
-  width: 16.666%;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: all 500ms ease;
-}
-.accordion ul li div {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-}
-.accordion ul li div a {
-  display: block;
-  height: 250px;
-  width: 100%;
-  position: relative;
-  
-  vertical-align: bottom;
-  padding: 15px 20px;
-  box-sizing: border-box;
-  color: #fff;
-  text-decoration: none;
-  font-family: Open Sans, sans-serif;
-  transition: all 200ms ease;
-}
-.accordion ul li div a * {
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  text-overflow: ellipsis;
-  position: relative;
-  z-index: 5;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-transform: translateX(-20px);
-  transform: translateX(-20px);
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-.accordion ul li div a h2 {
-  font-family: Montserrat, sans-serif;
-  text-overflow: clip;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 2px;
-  top: 160px;
-}
-.accordion ul li div a p {
-  top: 160px;
-  font-size: 13.5px;
-}
-
-.accordion ul:hover li { width: 8%; }
-.accordion ul:hover li:hover { width: 60%; }
-.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
-.accordion ul:hover li:hover a * {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-
-
-@media screen and (max-width: 600px) {
-  .accordion { height: auto; }
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
-  }
-  }
-  
-
-
-
-
-
-.accordion ul li:nth-child(1) { background-image: url(); }
-.accordion ul li:nth-child(2) { background-image: url("../statics/images/woman-01.jpg"); }
-.accordion ul li:nth-child(3) { background-image: url("../statics/images/woman02.jpg"); }
-.accordion ul li:nth-child(4) { background-image: url("../statics/images/woman-01.jpg"); }
-.accordion ul li:nth-child(5) { background-image: url("../statics/images/woman02.jpg"); }
-.accordion ul li:nth-child(6) { background-image: url("../statics/images/woman-01.jpg"); }
-
-/*  acardeon itroduction */
-
-
 
 
 
@@ -366,8 +253,69 @@ body{
   align-items: center;
   margin-top: 50px;
   text-align: center;
+  color: #6e6e6e;
 }
 
+.third-donation h1{
+  color: #444444;
+}
+
+
+.third-donation hr{
+  border-color: #6e6e6e;
+  width: 10%;
+  border: #6e6e6e 2px solid;
+
+}
+
+.third-donation a{
+  color: #a1a1a1;
+}
+
+
+
+/* mifa host*/
+.mifa-host{
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  text-align: left;
+}
+.mifa-host img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+.mifa-host div{
+  margin-left: 5%;
+}
+.mifa-host div h1{
+  margin-left: 5%;
+  font-size: xx-large;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #444444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+  width: fit-content;
+}
+.mifa-host div h5, .mifa-host div a, .mifa-host div h4{
+  background-color: #fff;
+  border-radius: 5px;
+  color: #444444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+  width: fit-content;
+}
+.mifa-host hr{
+  border-color: #6e6e6e;
+  width: 10%;
+  border: #6e6e6e 1px solid;
+  margin-left: 0;
+  margin-top: -1rem;
+}
 
 
 
