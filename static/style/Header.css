@@ -9,7 +9,7 @@
 header{
     background-color: rgb(246 243 243);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
-    z-index: 999999999;
+    z-index: 99999;
     width: 100%;
     
 }
@@ -128,7 +128,7 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
     min-width: 27.5em;
     pointer-events: none;
     box-sizing: border-box;
-    z-index: 999;
+    z-index: 99;
     margin-left: -5em;
     clip-path: inset(0 10em 10em 15em);
     opacity: 0;
