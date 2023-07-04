@@ -11,6 +11,7 @@ header{
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
     z-index: 999999999;
     width: 100%;
+    
 }
 nav {
     width: var(--menu-width);
@@ -38,7 +39,7 @@ nav .menu-item {
     justify-content: center;
     perspective: 200px;
     letter-spacing: 0.5px;
-    min-height: 7.5em;
+    min-height: 4em;
 
 }
 
@@ -386,8 +387,8 @@ header{
 
 
 .sighn-up-btn {
-    margin-top: 1rem;
-    left: 6rem;
+   
+    
     text-decoration: none;
     position:relative;
     border: none;
@@ -402,6 +403,7 @@ header{
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
+    cursor: pointer;
   }
   
   .sighn-up-btn:hover {
@@ -422,10 +424,6 @@ header{
   .sighn-up-btn:before {
     content: '';
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
     z-index: -1;
     background: linear-gradient(90deg,#03a9f4,#1064ff,#0207ff,#03a9f4);
     background-size: 400%;
@@ -555,10 +553,15 @@ header{
 
 
 
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-
+}
+.header-right img:hover{
+    cursor: pointer;
+}
 
 
     /* toggle menu */
