@@ -171,6 +171,11 @@ body{
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
     z-index: 3;
     
+
+    }
+
+    .second-section-main h1{
+      padding-top: 30px;
     }
 
 .judge-main{
@@ -178,7 +183,7 @@ body{
   place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 100px;
-    
+    height: 90vh;
 }
 
 
