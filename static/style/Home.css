@@ -349,7 +349,6 @@ footer h5:hover{
   background-color: #fff;
   border-radius: 10px;
  
-  
 }
 
 .social-logos img{
@@ -360,6 +359,9 @@ footer h5:hover{
   cursor: pointer;
 }
 
+.footer-logos span{
+  margin-top: 1rem;
+}
 
 
 /* footer  style*/
