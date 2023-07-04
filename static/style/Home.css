@@ -299,28 +299,30 @@ body{
   margin-left: 5%;
   font-size: xx-large;
   
-  background-color: #fff;
+ 
   border-radius: 5px;
-  color: #444444;
+  color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
   width: fit-content;
 }
 .mifa-host div h5, .mifa-host div a, .mifa-host div h4{
-  background-color: #fff;
+  
   border-radius: 5px;
-  color: #444444;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+  color: #fff;
   width: fit-content;
 }
 .mifa-host hr{
-  border-color: #6e6e6e;
+  border-color: #ffffff;
   width: 10%;
-  border: #6e6e6e 1px solid;
+  border: #ffffff 1px solid;
   margin-left: 0;
   margin-top: -1rem;
 }
 
-
+.mifa-host div a{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 
 
 
