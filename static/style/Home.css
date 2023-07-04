@@ -296,6 +296,7 @@ body{
 .mifa-host div h1{
   margin-left: 5%;
   font-size: xx-large;
+  
   background-color: #fff;
   border-radius: 5px;
   color: #444444;
@@ -339,7 +340,7 @@ footer{
 }
 
 
-footer h3:hover{
+footer h5:hover{
   cursor: pointer;
 }
 
@@ -347,6 +348,7 @@ footer h3:hover{
 .social-logos{
   background-color: #fff;
   border-radius: 10px;
+ 
   
 }
 
