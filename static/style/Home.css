@@ -166,10 +166,6 @@ body{
 
 /*  second-section-main */
     .second-section-main{
-        display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    place-items: center;
     
     text-align: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
@@ -179,26 +175,32 @@ body{
 
 .judge-main{
   display: grid;
-    grid-template-columns: 1fr 1fr;
+  place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 100px;
     
 }
 
 
 .judges-div{
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   border: 1px solid #000000;
   border-radius: 50%;
   
   box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
   filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
 
-
+  padding-left: 10px;
   background-size: 10rem auto;
 
   margin-bottom: 4rem;
+  overflow: hidden;
 
+}
+
+.judges-div img{
+  width: 130%;
 }
 
 
