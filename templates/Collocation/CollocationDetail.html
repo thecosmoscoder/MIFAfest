@@ -2,26 +2,272 @@
 
 
 <style>
-#smallImages img{
-    width: 20%;
-    height: auto;
+/* Rating */
+.rating {
+  margin: -5% 0 0 1%;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+ 
+}
 
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+.add-wish__button {
+  display: flex;
+  justify-content: center;
+  
+  padding: 9px 12px;
+
+  height: 40px;
+  width: 100px;
+  border: none;
+  background: #FF342B;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.lable__wish {
+  line-height: 22px;
+  margin-left: 15px;
+}
+
+.add-wish__button:hover {
+  background: #e52e26;
+}
+.svg-icon{
+  color: #fff;
+}
+.add-wish__button:hover .svg-icon {
+  animation: slope 1s linear infinite;
+ 
+}
+
+@keyframes slope {
+  0% {
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+  }
+}
+
+
+
+
+.colo-detail-sec{
+    margin-top: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    width: 100%;
+
+    display: flex;
+
+}
+.image-cont-left{
+    width: 60%;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#smallImages img{
+    width: 100px;
+    height: auto;
+}
+#smallImages img:hover{
+    opacity: 0.8;
+}
+
+
+#smallImages{
+    position: absolute;
+    margin-top: -3%;
+    left: 2%;
+    cursor: pointer;
+}
+
+#bigImageContainer{
+    height: 80vh;   
+    border-radius: 20px;
+    width: 60%;
+}
+
+#smallImages img{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 20px;
+   
+}
+
+
+.right-colo-detail{
+    width: 40%;
+    text-align: left;
+}
+
+.right-colo-detail h3{
+    margin-left: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    color: #979797;
+    cursor: pointer;
+}
+.right-colo-detail hr{
+    width: 30%;
+    left: 0;
+}
+
+.right-colo-detail p{
+    font-size: xx-large;
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.span-desc__right{
+    margin-left: 1rem;
 }
 
 </style>
-<section>
+<section class="colo-detail-sec">
 
-<div>
+<div class="image-cont-left">
+<div id="bigImageContainer">
+    <img id="bigImage" src="https://s.fotorama.io/1.jpg" />
+</div>
+
 <div id="smallImages">
     <img id="img1" src="https://s.fotorama.io/2.jpg" />
     <img id="img2" src="https://s.fotorama.io/3.jpg" />
     <img id="img3" src="https://s.fotorama.io/4.jpg" />
     <img id="img4" src="https://s.fotorama.io/5.jpg" />
 </div>
-
-<div id="bigImageContainer">
-    <img id="bigImage" src="https://s.fotorama.io/1.jpg" />
 </div>
+
+<div class="right-colo-detail">
+<h3>MIFAfest </h3>
+
+
+<p>Fall Limited Edition</p>
+
+<div class="rating">
+  <input value="star-1" name="star-radio" id="star-1" type="radio">
+  <label for="star-1">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" name="star-radio" id="star-2" type="radio">
+  <label for="star-2">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" name="star-radio" id="star-3" type="radio">
+  <label for="star-3">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" name="star-radio" id="star-4" type="radio">
+  <label for="star-4">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+  <input value="star-1" name="star-radio" id="star-5" type="radio">
+  <label for="star-5">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+  </label>
+
+  <span>Rate this!</span>
+</div>
+
+<p class="span-desc__right" style="font-size: 14px; width: 70%">
+These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+</p>
+<button class="add-wish__button">
+  <span class="material-symbols-outlined svg-icon" style="color: #fff; width: 10px; padding-right:10px; ">add_circle</span>  <span class="lable__wish" style=" font-size: 14px; color: #fff;">WishList</span>
+</button>
+
+<p style="font-size: 13px; color: #666;">If you don’t do anything, each section willns, you apply the .grid class and create CSS rules that set up a four-column grid and </p>
+
+<span style="margin-left: 1rem;">Made With <span class="material-symbols-outlined" style="width: 25px;">
+favorite
+</span>in Iran</span>
 </div>
 
 </section>
