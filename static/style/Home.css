@@ -253,6 +253,7 @@ body{
 
 .third-donation{
   width: 60%;
+  height: 90vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -265,13 +266,13 @@ body{
 
 .third-donation h1{
   color: #444444;
+  font-size: xxx-large;
 }
 
 
 .third-donation hr{
-  border-color: #6e6e6e;
   width: 10%;
-  border: #6e6e6e 2px solid;
+  border: #d4d4d4 2px solid;
 
 }
 
