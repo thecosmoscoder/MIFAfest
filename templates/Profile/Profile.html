@@ -198,6 +198,135 @@ cursor: pointer;
 }
 
 
+/* tess */
+
+.testimonial-slider {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin: auto;
+   text-align: center;
+}
+
+.testimonial-slider ul.slider {
+   display: block;
+   list-style: none;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+}
+.testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+
+    -webkit-animation: fade-animation-1 25s infinite;
+            animation: fade-animation-1 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 25s infinite;
+            animation: fade-animation-2 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 25s infinite;
+            animation: fade-animation-3 25s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 25s infinite;
+            animation: fade-animation-4 25s infinite;
+}
+
+.testimonial-slider q {
+   display: inline-block;
+   font: normal 700 50px / 1.25 'Rubik', Helvetica, Arial, Verdana, sans-serif;
+   letter-spacing: .5pt;
+   text-shadow: 0 5px 10px rgba(0,0,0,.1);
+   max-width: 35ch;
+}
+
+.testimonial-slider .source {
+    margin-top: 25px;
+    color: #1b1b1b;
+    font: italic 400 30px / 1.35 'Rubik', Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* KEYFRAME DECLARATIONS */
+@keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+
 
 </style>
 {% endblock head %}
@@ -227,6 +356,7 @@ cursor: pointer;
         <div>
           <h2>Mahla</h2>
           <h3>oil painter</h3>
+          
       <div class="social-logo-prof">
 
         <img src="{% static './images/social-icons/instagram.png' %}" alt="" style="width: 40px; height:auto;"/>
@@ -247,14 +377,14 @@ cursor: pointer;
     </section>
 
     <div class="main">
-      <h2>Intro</h2>
+      <h2>bio</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id
         aspernatur doloremque! Natus iure ea aliquam laborum nemo! Accusamus
         officiis aspernatur optio asperiores modi excepturi, dicta id
         necessitatibus nam perferendis!
       </p>
-      <h2>Skills</h2>
+      <h2>gloals</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id
         aspernatur doloremque! Natus iure ea aliquam laborum nemo! Accusamus
@@ -271,14 +401,41 @@ cursor: pointer;
 
 
 
+<div class="testimonial-slider">
+  <ul class="slider">
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Mahla's work is awsome!</q>
+        <p class="source">- Paul C, TX</p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Here is the second one, this is awesome!</q>
+        <p class="source">- Ella M, TX</p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>Next, the third quote - AMAZING!</q>
+        <p class="source">- Blaine B, TX</p>
+      </div>
+    </li>
+    <li>
+      <div class="testimonial-slider-content">
+        <q>This is the last quote, I can't believe how well this worked!</q>
+        <p class="source">- Guillermo O, TX</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
 
 
 
 
 <section class="bottom-sec">
-
-
-
 
 
 <div class="artist-album" id="artistAlbum">
