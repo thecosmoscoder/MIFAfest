@@ -34,18 +34,19 @@ body{
 }
 .main-first h1{
   font-family: 'Rubik', sans-serif;
-
+  min-width: 95%;
     font-size: 6rem;
     animation: changebk 10s infinite alternate linear;
 }
 
 .h1-bg{
   margin-top:2rem;
+  width: 95%;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
   background: linear-gradient(90deg, rgba(3, 244, 111, 0.01), rgba(31, 224, 13, 0.01), rgba(3, 169, 244, 0.01), rgba(3, 244, 111, 0.01));
-
+  min-width: 95%;
 
 }
 
@@ -73,26 +74,8 @@ body{
 
 
 
-.who-are__section{
-  color: rgb(99, 99, 99);
-  width: 100%;
-  margin-top: 25rem;
-}
 
-.main-first span{
-    padding-top: -5rem;
-    color: rgb(99, 99, 99);
-    width: 70%;
-}
 
-.main-first .p{
-    color: rgb(0, 255, 255);
-    cursor: pointer;
-}
-
-.main-first span{
-  margin-bottom: 2rem;
-}
 
 
 /* section slider */
