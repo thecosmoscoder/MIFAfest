@@ -9,8 +9,43 @@
     <style type="text/css">
         .first-intro__artist{
             display: flex;
-
+            width: 100%;
+            text-align: center;
+            }
+        .first-intro__artist h1{
+            margin-left: 3%;
+            width: 30%;
+            overflow: visible;
+            font-size: xxx-large;
+            color: rgb(70, 70, 70);
         }
+    
+        .img-container__artist{
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+                "a b c"
+                "d b e"
+        }
+        .a { grid-area: a; }
+        .b { grid-area: b; }
+        .c { grid-area: c; }    
+        .d { grid-area: d; }
+        .e { grid-area: e; }
+     
+
+        .img-container__artist div{
+            width: 15rem;
+            overflow: hidden;
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); 
+            object-fit:cover;
+            cursor: pointer;
+        }
+
         
     </style>
 
@@ -18,28 +53,31 @@
 <section class="main-first" style="box-shadow: none;"></section>
 
 <section class="first-intro__artist">
+
 <h1>Meet the Artists Behind the ArtWork!</h1>
 
 <div class="img-container__artist">
-<div>
-<img src="{% static './images/artist01.jpeg'%}" alt="" />
-</div>
-<div>
-<img src="{% static './images/artist02.webp'%}" alt="" />
-</div>
-<div>
-<img src="{% static './images/artist01.jpeg'%}" alt="" />
-</div>
-<div>
-<img src="{% static './images/artist01.jpeg'%}" alt="" />
-</div>
-<div>
-<img src="{% static './images/artist01.jpeg'%}" alt="" />
-</div>
-<div>
-<img src="{% static './images/artist01.jpeg'%}" alt="" />
-</div>
-</div>
+
+  <div class="a">
+  <img src="{% static './images/artist01.jpeg'%}" alt="" />
+  </div>
+  <div class="b">
+  <img src="{% static './images/artist02.webp'%}" alt="" />
+  </div>
+  <div class="c">
+  <img src="{% static './images/artist03.jpeg'%}" alt="" />
+  </div>
+  <div class="d">
+  <img src="{% static './images/artist04.jpeg'%}" alt="" />
+  </div>
+  <div class="e">
+  <img src="{% static './images/artist05.jpeg'%}" alt="" />
+  </div>
+  
+</section>
+
+
+<section class="intro-sect__artist">
 
 </section>
 
