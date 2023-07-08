@@ -11,6 +11,8 @@
             display: flex;
             width: 100%;
             text-align: center;
+            align-items: center;
+            
             }
         .first-intro__artist h1{
             margin-left: 3%;
@@ -21,9 +23,10 @@
         }
     
         .img-container__artist{
+            margin-top: 15vh;
             display: grid; 
-            grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
             gap: 0px 0px; 
             grid-template-areas: 
                 "a b c"
@@ -36,8 +39,8 @@
         .e { grid-area: e; }
      
 
-        .img-container__artist div{
-            width: 15rem;
+        .img-container__artist div img{ 
+           
             overflow: hidden;
             padding: 5px;
             border-radius: 20px;
@@ -46,15 +49,26 @@
             cursor: pointer;
         }
 
-        
+        .intro-sect__artist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            
+            background-color: #fff;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            margin-top: 4vh;
+        }
     </style>
 
 {% include "../Header/Header.html" %}
-<section class="main-first" style="box-shadow: none;"></section>
+
 
 <section class="first-intro__artist">
 
-<h1>Meet the Artists Behind the ArtWork!</h1>
+<h1>Meet the Girls Behind the ArtWork!</h1>
 
 <div class="img-container__artist">
 
@@ -78,7 +92,20 @@
 
 
 <section class="intro-sect__artist">
+<h1>Get Know Our Girl!</h1>
+<h3>know more about our artists to beatify your world!</h3>
 
+<div>
+    <div>
+        <img src="{% static './images/colo-ex02.webp'%}" alt="" />
+        <img src="{% static './images/artist01.jpeg'%}" alt="" />
+        <h2>Mahla Mohammadi</h2>
+        <span>i'm oil painter. i like minimalism.</span>
+    </div>
+    
+    
+    
+</div>
 </section>
 
 
