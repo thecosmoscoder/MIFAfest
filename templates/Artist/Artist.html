@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    MIFAfest - artists
+{% endblock title %}
+
+{% block content %}
+    <style type="text/css">
+        .first-intro__artist{
+            display: flex;
+
+        }
+        
+    </style>
+
+{% include "../Header/Header.html" %}
+<section class="main-first" style="box-shadow: none;"></section>
+
+<section class="first-intro__artist">
+<h1>Meet the Artists Behind the ArtWork!</h1>
+
+<div class="img-container__artist">
+<div>
+<img src="{% static './images/artist01.jpeg'%}" alt="" />
+</div>
+<div>
+<img src="{% static './images/artist02.webp'%}" alt="" />
+</div>
+<div>
+<img src="{% static './images/artist01.jpeg'%}" alt="" />
+</div>
+<div>
+<img src="{% static './images/artist01.jpeg'%}" alt="" />
+</div>
+<div>
+<img src="{% static './images/artist01.jpeg'%}" alt="" />
+</div>
+<div>
+<img src="{% static './images/artist01.jpeg'%}" alt="" />
+</div>
+</div>
+
+</section>
+
+
+
+{% include "../Footer/Footer.html" %}
+  
+{% endblock content %}  

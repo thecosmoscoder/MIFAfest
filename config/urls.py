@@ -24,8 +24,6 @@ urlpatterns = [
     path('collocation/', TemplateView.as_view(template_name='./Collocation/Collocation.html'), name='collocation'),
     path('auth/', TemplateView.as_view(template_name='./Auth/Auth.html'), name='auth'),
     path('profile/', TemplateView.as_view(template_name='./Profile/Profile.html'), name='profile'),
-
-
-
+    path('artist/', TemplateView.as_view(template_name='./Artist/Artist.html'), name='artist'),
 
 ]
