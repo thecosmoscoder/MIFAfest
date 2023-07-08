@@ -27,6 +27,7 @@ body{
     text-align: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3);
     z-index: -2;
+    height: 130vh;
     
     
     
@@ -72,7 +73,7 @@ body{
 
 
 
-.main-first h2{
+.who-are__section{
   color: rgb(99, 99, 99);
   width: 100%;
   margin-top: 25rem;
