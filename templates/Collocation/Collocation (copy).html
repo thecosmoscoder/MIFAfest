@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}
-   colloction
-{% endblock title %}
+{% block title %}stary night - colloction{% endblock %}
+{% block head %}
+<style>
 
-{% block content %}
-    <style type="text/css">
-        
 .artist-album img{
     width: 200px;
     height: 200px;
@@ -151,11 +148,20 @@
     object-fit:cover;
 }
 
-    </style>
+</style>
+{% endblock head %}
 
+
+
+
+
+{% block header %}
 {% include '../Header/Header.html' %}
+{% endblock header %}
 
 
+
+{% block content %}
 
     <main>
         
@@ -249,5 +255,15 @@
 
  
 
+ 
 
-{% endblock content %}  
+
+{% include "../Footer/Footer.html" %}
+{% endblock content%}
+
+
+
+
+
+
+
