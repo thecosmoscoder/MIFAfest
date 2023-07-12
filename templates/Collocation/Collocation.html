@@ -7,23 +7,6 @@
 
 {% block content %}
     <style type="text/css">
-        
-.artist-album img{
-    width: 200px;
-    height: 200px;
-}
-
-.artist-album p{
-    color: rgb(97, 97, 97);
-}
-.artist-album p:hover{
-    color: rgb(155, 155, 155);
-    cursor: pointer;
-}
-
-
-
-
 
 
 
@@ -40,116 +23,6 @@
 }
 
 
-
-
-.picZoomer{
-	position: relative;
-    /*margin-left: 40px;
-    padding: 15px;*/
-}
-.picZoomer-pic-wp{
-	position: relative;
-	overflow: hidden;
-    text-align: center;
-}
-.picZoomer-pic-wp:hover .picZoomer-cursor{
-	display: block;
-}
-.picZoomer-zoom-pic{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.picZoomer-pic{
-	/*width: 100%;
-	height: 100%;*/
-}
-.picZoomer-zoom-wp{
-	display: none;
-	position: absolute;
-	z-index: 999;
-	overflow: hidden;
-    border:1px solid #eee;
-    height: 460px;
-    margin-top: -19px;
-}
-.picZoomer-cursor{
-	display: none;
-	cursor: crosshair;
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 50%;
-	border: 1px solid #eee;
-	background-color: rgba(0,0,0,.1);
-}
-.picZoomCursor-ico{
-	width: 23px;
-	height: 23px;
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	background: url(images/zoom-ico.png) left top no-repeat;
-}
-
-.my_img {
-    vertical-align: middle;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 100%;
-}
-.piclist li{
-    display: inline-block;
-    width: 90px;
-    height: 114px;
-    border: 1px solid #eee;
-}
-.piclist li img{
-    width: 97%;
-    height: auto;
-}
-
-/* custom style */
-.picZoomer-pic-wp,
-.picZoomer-zoom-wp{
-    border: 1px solid #eee;
-}
-
-
-
-
-/*===pic-Zoom===*/
-._boxzoom .zoom-thumb {
-    width: 90px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0px;
-}
-._boxzoom .zoom-thumb ul.piclist {
-    padding-left: 0px;
-    top: 0px;
-}
-._boxzoom ._product-images {
-    width: 80%;
-    display: inline-block;
-}
-._boxzoom ._product-images .picZoomer {
-    width: 100%;
-}
-._boxzoom ._product-images .picZoomer .picZoomer-pic-wp img {
-    left: 0px;
-}
-._boxzoom ._product-images .picZoomer img.my_img {
-    width: 100%;
-}
-.piclist li img {
-    height:100px;
-    object-fit:cover;
-}
 
     </style>
 
@@ -173,7 +46,7 @@
           border-radius: 15px;
           width:60%;
           overflow:hidden;
-          margin-top: 5rem;
+          
                   ">
                      <img src="{% static './images/colo-sample.jpg' %}" alt="" style="max-width: 100%; z-index: -1; display: block"/>
                  </div>
@@ -185,7 +58,7 @@
           height:auto;
           overflow:hidden;
           position: absolute;
-          margin-top: 4rem;
+          margin-top: -2rem;
           
           padding: 0 1rem 0 1rem;
           background-color: rgba(0,0,0);
@@ -198,56 +71,15 @@
 
 
 
-
-{% include './CollocationDetail.html'%} 
-
-
-
-
-
-
-      <div class="artist-album" id="artistAlbum">
-        <h1>All Of <a href="/profile">Mahla</a></h1>
-        <img src="{% static './images/colo-ex04.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex03.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex02.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex03.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex02.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex04.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex03.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex02.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex03.webp'%}" alt="" />
-        <img src="{% static './images/colo-ex04.webp'%}" alt="" />
-
-        
-    
-        <p id="seeMore">See More</p>
-        <p id="showLess" style="display: none;">Show Less</p>
-    </div>
-
-
-
-    <div class="artist-album" id="artistAlbum">
-        <h3>you may like it</h3>
-        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-        <img src="https://via.placeholder.com/600/000000/FFFFFF/?text=07" alt="">
-        
-    </div>
-    
-
-
-
 </section>
 
 
+{% include './CollocationDetail.html'%} 
 
   </main>
 
 
-
  
-
+{% include "../Footer/Footer.html" %}
 
 {% endblock content %}  
