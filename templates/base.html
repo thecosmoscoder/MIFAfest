@@ -180,7 +180,23 @@ $(document).ready(function() {
 
 
 //home 
-//mifa host 
+//artist
+$(document).ready(function() {
+    $('#nextArtistDe').click(function() {
+        
+        $('#oneImgInArtistPage').attr('src', '{% static './images/colo-ex03.webp'%}');
+        $('#twoImgInArtistPage').attr('src', '{% static './images/colo-ex04.webp'%}');
+
+    });
+
+    $('#beforeArtistDe').click(function() {
+        
+        $('#oneImgInArtistPage').attr('src', '{% static './images/colo-ex02.webp'%}');
+        $('#twoImgInArtistPage').attr('src', '{% static './images/colo-ex02.webp'%}');
+
+    });
+});
+
 
 
     </script>

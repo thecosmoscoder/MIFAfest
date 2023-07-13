@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .third-art__artist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        .third-art__artist span{
+            font-size: xxx-large;
+            cursor: pointer;
+            margin: 0 5px 0 5px;
+        }
+        .third-art__artist span:hover{
+            background-color: rgb(194, 194, 194);
+            border-radius: 50%;
+        }
+
+        .div-in-third___artist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+         .div-in-third___artist div{
+            width: 40%;
+            overflow: hidden;
+         }
+         .div-in-third___artist div img{
+            width: 90%;
+         }
+    </style>
+
+<section class="third-art__artist">
+
+<span class="material-symbols-outlined" id="beforeArtistDe">navigate_before</span>
+<div class="div-in-third___artist">
+    <div>
+        <img src="{% static './images/colo-ex02.webp'%}" alt="" id="oneImgInArtistPage"/>
+        <h2>title</h2>
+    </div>
+    <div>
+        <img src="{% static './images/colo-ex02.webp'%}" alt="" id="twoImgInArtistPage"/>
+        <h2>title</h2>
+    </div>
+</div>
+<span class="material-symbols-outlined" id="nextArtistDe">navigate_next</span>
+
+</section>
+{% endblock content %}  

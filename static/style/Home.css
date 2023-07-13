@@ -98,7 +98,7 @@ body{
   
   .marquee-content {
     display: flex;
-    animation: scrolling 40s linear infinite;
+    animation: scrolling 70s linear infinite;
     animation-play-state: running;
 
   }
