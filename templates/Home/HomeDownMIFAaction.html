@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .learn-more___auction{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
+        .learn-more___auction img{
+            width: 60%;
+        }
+
+
+.learn-more___auction div{
+  
+}
+.learn-more___auction div h1{
+  margin-left: 5%;
+  font-size: xx-large;
+  
+ 
+  border-radius: 5px;
+  color: #444444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+  width: fit-content;
+}
+.learn-more___auction div h5, .learn-more___auction div a, .learn-more___auction div h4{
+  
+  border-radius: 5px;
+  color: #444444;
+  width: fit-content;
+}
+.learn-more___auction hr{
+  border-color: #444444;
+  width: 10%;
+  border: #444444 1px solid;
+  margin-left: 0;
+  margin-top: -1rem;
+}
+
+.learn-more___auction div a{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+    </style>
+
+<section class="learn-more___auction">
+    <img src="{% static './images/down-auction.jpg'%}" alt="" />
+    <div>
+        <h5>Discover</h5>
+        <hr />
+        <h1>MIFA Auction</h1>
+        <h4>Meet the times of MIFAaucation.</h4>
+        <a href=""><span class=""> Learn More </span></a>
+  </div>
+</section>
+{% endblock content %}  
