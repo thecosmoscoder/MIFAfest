@@ -50,6 +50,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- cdn for slide in home -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 
 
@@ -197,6 +198,50 @@ $(document).ready(function() {
 
 
 // home - MIFAaction 
+$(document).ready(function() {
+  var image = $('#mifaActionHome');
+  var imageSources = [
+    '{% static './images/MIFAactionHome02.jpg'%}',
+    '{% static './images/MIFAactionHome03.jpg'%}',
+    '{% static './images/MIFAactionHome04.jpg'%}',
+    '{% static './images/MIFAactionHome01.jpg'%}'
+  ];
+
+  var currentIndex = 0;
+
+  function changeImage() {
+    image.fadeOut(1000, function() {
+      image.attr('src', imageSources[currentIndex]);
+      currentIndex = (currentIndex + 1) % imageSources.length;
+      image.fadeIn(1000);
+    });
+  }
+
+  setInterval(changeImage, 5000);
+});
+
+// target day
+var targetDate = moment('2023-12-31');
+
+
+function updateTimer() {
+  var currentDate = moment();
+  var duration = moment.duration(targetDate.diff(currentDate));
+  
+  var days = Math.floor(duration.asDays());
+  var hours = duration.hours();
+  var minuts = duration.minutes();
+  var second = duration.seconds();
+
+  
+  var timerDisplay = document.getElementById('timer');
+  timerDisplay.textContent = days + ' d: ' + hours + ' h:' + minuts + ' :m ' + second + ' s ';
+}
+
+updateTimer();
+
+// Update the timer every second
+setInterval(updateTimer, 1000);
 
 
 
