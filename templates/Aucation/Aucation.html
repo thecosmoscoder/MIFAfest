@@ -7,24 +7,55 @@
 
 {% block content %}
     <style type="text/css">
-        
+        .first___mifaac{
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 6em;
+            padding-right: 5%;
+
+        }
+        .span-container__mifaac {
+            width: 60%;
+            padding-right: 20%;
+            color: rgb(46, 46, 46);
+
+            
+        }
+        .span-container__mifaac span{
+            width: 30%;
+        }
+        .material-aua{
+            margin-top: -2px;
+        }
+
+        .other-learn-more-contamnet___aucat{
+            display: flex;
+            align-items: center;
+             cursor: pointer;
+
+        }
     </style>
-<main>
+    {% include "../Header/Header.html" %}
+
+
         
-
-      <section class="main-first" style="display:grid; place-items: center; box-shadow: none;"></section>
-
-{% include "../Header/Header.html" %}
-
-
 <section class="first___mifaac">
 <h1>MIFAauctions</h1>
-<div>get know about auction on MIFAaucation. and sellers across the globe. We feature premium artworks including modern, contemporary, and street art, so you can find works by your favorite artists—and discover new ones—all in one place.</div>
+<div class="span-container__mifaac">
+<span>get know about auction on MIFAaucation. and sellers across the globe. We feature premium artworks including modern, contemporary, and street art, so you can find works by your favorite artists—and discover new ones—all in one place.
+</span>
+    <div class="other-learn-more-contamnet___aucat">
+        <p>Learn More About MIFAaucation </p><span class="material-symbols-outlined material-aua">chevron_right</span>
+    </div>
+</div>
 </section>
 
-<section class="main___mifaac">
-    
-</section>
+{% include "./Trends.html" %}
 
-</main>
+
+
+
+
 {% endblock content %}  
