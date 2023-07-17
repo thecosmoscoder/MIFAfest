@@ -10,6 +10,36 @@
         .descri-place__trend span{
             color: rgb(133, 133, 133);
         }
+
+.show-more-container__auca{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+        .show-more-btn__auca {
+  
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  color: #000;
+  padding: 0.5em 0.6em;
+  background: #fff;
+  display: flex;
+  
+  align-items: center;
+  gap: 0.1em;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+
+
+
+
     </style>
 <section class="palce-tren__pplace">
     <div class="descri-place__trend">
@@ -30,6 +60,8 @@
 
 </section>
 <div class="show-more-container__auca">
-<button> Button </button>
+<button class="show-more-btn__auca">
+    Show More<span class="material-symbols-outlined">arrow_drop_down</span>
+</button>
 </div>
 {% endblock content %}  
