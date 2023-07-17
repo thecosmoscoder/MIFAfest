@@ -44,8 +44,24 @@
         }
 
         .aucation-up-control___auca{
-            
+            margin-left: 6%;
+            color: rgba(134, 134, 134, 0.8);
+            cursor: pointer;
         }
+        .aucation-up-control___auca span{
+            margin-right: 30px;
+        }
+        .aucation-up-control___auca span:hover{
+            color: rgba(134, 134, 134, 0.6);
+        }
+     
+   .aucation-up-control___auca__active{
+            color: rgba(0, 0, 0, 0.6);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+            padding-bottom: 8px;
+        }
+
+
     </style>
     {% include "../Header/Header.html" %}
 
@@ -65,9 +81,8 @@
 
 <div class="aucation-up-control___auca">
     
-    <span>Highlights</span>
-    <span>Trends Lot</span>
-    
+    <span id="spanUpAuc">Highlights</span>
+    <span class="span-up-controll__auca">Trends Lot</span>
 </div>
 <div class="hr-cont__auca"><hr /></div>
 
