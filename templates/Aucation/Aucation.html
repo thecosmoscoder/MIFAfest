@@ -55,11 +55,59 @@
             color: rgba(134, 134, 134, 0.6);
         }
      
-   .aucation-up-control___auca__active{
+   .aucation-control__active{
             color: rgba(0, 0, 0, 0.6);
             border-bottom: 2px solid rgba(0, 0, 0, 0.6);
             padding-bottom: 8px;
         }
+
+
+/* place trends*/
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(3, 3, 3, 0.9);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+
+
+.place__trends{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 3%;
+    
+}
 
 
     </style>
@@ -81,7 +129,7 @@
 
 <div class="aucation-up-control___auca">
     
-    <span id="spanUpAuc">Highlights</span>
+    <span class="aucation-control__active" id="">Highlights</span>
     <span class="span-up-controll__auca">Trends Lot</span>
 </div>
 <div class="hr-cont__auca"><hr /></div>
@@ -97,9 +145,28 @@
 
 
 <section class="place__trends">
-    
+<a class="playstore-button" href="#">
+  <span class="texts">
+    <span class="text-1 ">MIFAauction</span>
+    <span class="text-2 temp-class__auca">CURRECT</span>
+  </span>
+</a>
+<a class="playstore-button" href="#">
+  <span class="texts">
+    <span class="text-1">MIFAauction</span>
+    <span class="text-2">UP COMING</span>
+  </span>
+</a>
+<a class="playstore-button" href="#">
+  <span class="texts">
+    <span class="text-1">MIFAauction</span>
+    <span class="text-2">PAST</span>
+  </span>
+</a>
 </section>
+<div class="hr-cont__auca"><hr /></div>
 
+{% include "./TrendsPlaces.html" %}
 
 
 {% endblock content %}  
