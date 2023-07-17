@@ -3,7 +3,13 @@
 
 {% block content %}
     <style type="text/css">
-        
+        .descri-place__trend{
+            margin-left: 6%;
+        }
+
+        .descri-place__trend span{
+            color: rgb(133, 133, 133);
+        }
     </style>
 <section class="palce-tren__pplace">
     <div class="descri-place__trend">
@@ -11,6 +17,17 @@
         <span>July 10, 2023 - July 20</span>
         {% include "./Trends.html" %}
     </div>
+    <div class="descri-place__trend">
+        <h1>Felan, Philadelphia</h1>
+        <span>July 20, 2023 - July 60</span>
+        {% include "./Trends.html" %}
+    </div>
+    <div class="descri-place__trend">
+        <h1>Tokiyo, Japan</h1>
+        <span>July 9, 2023 - July 15</span>
+        {% include "./Trends.html" %}
+    </div>
+
 </section>
 
 {% endblock content %}  
