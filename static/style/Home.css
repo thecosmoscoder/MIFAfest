@@ -88,12 +88,17 @@ body{
     background-color: #fff;
 
     padding:2rem 0 2rem 0;
+
+    overflow-x: auto;
+    white-space: nowrap;
+           
 }
 
 
   
   .marquee {
     overflow: hidden;
+    display: inline-block;
   }
   
   .marquee-content {
