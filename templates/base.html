@@ -216,6 +216,36 @@ $(document).ready(function() {
   setInterval(changeImage, 5000);
 });
 
+//home btn
+$(document).ready(function() {
+      $('#mifahostBtn').click(function() {
+        $(this).css('color', '#000');
+        $(this).css('text-decoration', 'underline');
+        $(this).css('text-underline-offset', '12px');
+        $('#mifaCollocaBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifaCollocaBtn').css('text-decoration', 'none');
+        $('#mifaaucationBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifaaucationBtn').css('text-decoration', 'none');
+      });
+      $('#mifaaucationBtn').click(function() {
+        $(this).css('color', '#000');
+        $(this).css('text-decoration', 'underline');
+        $(this).css('text-underline-offset', '12px');
+        $('#mifaCollocaBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifaCollocaBtn').css('text-decoration', 'none');
+        $('#mifahostBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifahostBtn').css('text-decoration', 'none');
+      });
+      $('#mifaCollocaBtn').click(function() {
+        $(this).css('color', '#000');
+        $(this).css('text-decoration', 'underline');
+        $(this).css('text-underline-offset', '12px');
+        $('#mifaaucationBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifaaucationBtn').css('text-decoration', 'none');
+        $('#mifahostBtn').css('color', 'rgb(87, 87, 87)');
+        $('#mifahostBtn').css('text-decoration', 'none');
+      });
+    });
 
 
 

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+    .control-btn__home{
+        margin-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .control-btn__home hr{
+        width: 90%;
+        z-index: -1;
+    }
+        .div-in-btn__home{
+            display: flex;
+            margin: 1rem 10% 0 5%;
+            justify-content: space-between;
+            text-align: left;
+            color: rgb(87, 87, 87);
+        }
+
+        .div-in-btn__home span{
+            cursor: pointer;
+        }
+
+    .div-in-btn__homeActive, #mifaCollocaBtn{
+        color: #000; 
+        text-decoration: underline;
+        text-underline-offset: 12px;
+    }
+    .div-in-btn__homeUnActive{
+        color: rgb(87, 87, 87);
+        text-decoration: none;
+    }
+    </style>
+
+<section class="control-btn__home">
+    <div class="div-in-btn__home">
+        <span class="mifa-btn__home" id="mifaCollocaBtn">MIFA Collocation</span>
+        <span class="mifa-btn__home" id="mifaaucationBtn">MIFAaucation</span>
+        <span class="mifa-btn__home" id="mifahostBtn">MIFAhost</span>
+    </div>
+    <hr />
+</section>
+
+{% endblock content %}  
