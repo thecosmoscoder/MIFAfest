@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        #mifaColonHome{
+            display: none;
+        }
+    </style>
+
+<div id="mifaColonHome">
+<section class="mifaaucation__home">
+    <h1>MIFA</h1>
+    <p>find the best collocation lorem lorem.</p>
+</section>
+
+
+<section class="list-container__home">
+<div class="llist-con-div__home">
+    <div>
+        <h3>Limitied Edition</h3>
+        <p>find artworks that has fewer copy</p>
+    </div>
+    <div class="trend-cont__home">
+    {% include "../Aucation/Trends.html" %}
+    </div>
+</div>
+<div class="llist-con-div__home">
+    <div>
+        <h3>Pop Art</h3>
+        <p>see the pop art.</p>
+    </div>
+    <div class="trend-cont__home">
+    {% include "../Aucation/Trends.html" %}
+    </div>
+</div>
+<div class="llist-con-div__home">
+    <div>
+        <h3>Oil Painting</h3>
+        <p>find out oil Painting on colocation.</p>
+    </div>
+    <div class="trend-cont__home">
+    {% include "../Aucation/Trends.html" %}
+    </div>
+</div>
+
+
+
+<button class="show-more-btn__auca">
+    Show More<span class="material-symbols-outlined">arrow_drop_down</span>
+</button>
+</section>
+</div>
+
+{% endblock content %}  
