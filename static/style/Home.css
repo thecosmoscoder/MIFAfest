@@ -93,7 +93,9 @@ body{
     white-space: nowrap;
            
 }
-
+.slider-images::-webkit-scrollbar {
+  display: none;
+}
 
   
   .marquee {
