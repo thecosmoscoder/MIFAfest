@@ -50,7 +50,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- cdn for slide in home -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 
 
@@ -216,29 +215,6 @@ $(document).ready(function() {
 
   setInterval(changeImage, 5000);
 });
-
-// target day
-var targetDate = moment('2023-12-31');
-
-
-function updateTimer() {
-  var currentDate = moment();
-  var duration = moment.duration(targetDate.diff(currentDate));
-  
-  var days = Math.floor(duration.asDays());
-  var hours = duration.hours();
-  var minuts = duration.minutes();
-  var second = duration.seconds();
-
-  
-  var timerDisplay = document.getElementById('timer');
-  timerDisplay.textContent = days + ' d: ' + hours + ' h:' + minuts + ' :m ' + second + ' s ';
-}
-
-updateTimer();
-
-// Update the timer every second
-setInterval(updateTimer, 1000);
 
 
 
