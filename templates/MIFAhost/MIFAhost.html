@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+   MIFAhost
+{% endblock title %}
+
+{% block content %}
+    <style type="text/css">
+        .nav-mifa__host{
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 6em;
+            padding-right: 5%;
+
+        }
+        .nav-mifa__host h1{
+            color: #444444;
+        }
+        .span-container__mifaac {
+            width: 60%;
+            padding-right: 20%;
+            color: rgb(46, 46, 46);
+
+            
+        }
+        .span-container__mifaac span{
+            width: 30%;
+        }
+        .material-aua{
+            margin-top: -2px;
+        }
+    </style>
+
+{% include "../Header/Header.html" %}
+
+<section class="nav-mifa__host">
+<h1>MIFAhost</h1>
+<div class="span-container__mifaac">
+<span>get know about hosts on MIFAhost. and sellers across the globe. We feature premium artworks including modern, contemporary, and street art, so you can find works by your favorite artists—and discover new ones—all in one place.
+</span>
+</div>
+</section>
+
+
+{% include "./btnMIFAhost.html"%}
+{% endblock content %}  
