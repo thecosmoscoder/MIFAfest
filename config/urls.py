@@ -25,7 +25,7 @@ urlpatterns = [
     path('auth/', TemplateView.as_view(template_name='./Auth/Auth.html'), name='auth'),
     path('profile/', TemplateView.as_view(template_name='./Profile/Profile.html'), name='profile'),
     path('artist/', TemplateView.as_view(template_name='./Artist/Artist.html'), name='artist'),
-    path('aucation/', TemplateView.as_view(template_name='./Aucation/Aucation.html'), name='aucation'),
+    path('mifaaucation/', TemplateView.as_view(template_name='./Aucation/Aucation.html'), name='aucation'),
     path('mifahost/', TemplateView.as_view(template_name='./MIFAhost/MIFAhost.html'), name='mifahost'),
 
 
