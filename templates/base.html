@@ -192,6 +192,42 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function () {
+            $("#nextScrollArtist").on("click", function () {
+                // Set the distance you want to scroll to the right (adjust as needed)
+                var scrollDistance = 350;
+
+                // Get the current scroll position of the section
+                var currentScrollLeft = $(".maoin-exa__artist").scrollLeft();
+
+                // Calculate the new scroll position
+                var newScrollLeft = currentScrollLeft + scrollDistance;
+
+                // Animate the scroll to the right
+                $(".maoin-exa__artist").animate({ scrollLeft: newScrollLeft }, 300); // Adjust the animation speed (in milliseconds) as needed
+                $("#beforeScrollArtist").css('display', 'block'); // Adjust the animation speed (in milliseconds) as needed
+
+            });
+        });
+
+$(document).ready(function () {
+            $("#beforeScrollArtist").on("click", function () {
+                // Set the distance you want to scroll to the right (adjust as needed)
+                var scrollDistance = -350;
+
+                // Get the current scroll position of the section
+                var currentScrollLeft = $(".maoin-exa__artist").scrollLeft();
+
+                // Calculate the new scroll position
+                var newScrollLeft = currentScrollLeft + scrollDistance;
+
+                // Animate the scroll to the right
+                $(".maoin-exa__artist").animate({ scrollLeft: newScrollLeft }, 300); // Adjust the animation speed (in milliseconds) as needed
+
+            });
+        });
+
+
 
 // home - MIFAaction 
 $(document).ready(function() {
@@ -262,7 +298,7 @@ $(document).ready(function() {
 
 
 
-//aucation
+//artist
 
 
 
