@@ -28,45 +28,84 @@
   cursor: pointer;
 }
 
+.style-select___btncolo select {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0);
+  &:focus, &:active {
+    outline: 0;
+   
+  }
+}
+
 
 
     </style>
 
 <div id="mifaColonHome">
+
 <section class="mifaaucation__home">
-    <h1>MIFA</h1>
+    <h1>MIFAfest</h1>
     <p>find the best collocation lorem lorem.</p>
+
+<div class="style-select___btncolo">
+<select>
+  <option value="" selected="selected" disabled="disabled">Pick A Major</option>
+  <option value="1">Painting</option>
+  <option value="2">Sculpture</option>
+  <option value="3">Photography</option>
+  <option value="4">Digital Art</option>
+  <option value="5">Drawing</option>
+  <option value="5">Calligraphy</option>
+  <option value="5">Mixed Media</option>
+  <option value="5">Printmaking</option>
+  <option value="5">Textile Art</option>
+  <option value="5">Installation Art</option>
+  <option value="5">Jewelry and luxury Art</option>
+  <option value="5">Performance Art</option>
+  <option value="5">Literary Art</option>
+</select>
+
+<select>
+  <option value="" selected="selected" disabled="disabled">Pick A Style</option>
+  <option value="1">Realist</option>
+  <option value="2">Sculpture</option>
+  <option value="3">Photography</option>
+  <option value="4">Digital Art</option>
+  <option value="5">Drawing</option>
+  <option value="5">Calligraphy</option>
+  <option value="5">Mixed Media</option>
+  <option value="5">Printmaking</option>
+  <option value="5">Textile Art</option>
+  <option value="5">Installation Art</option>
+  <option value="5">Jewelry and luxury Art</option>
+  <option value="5">Performance Art</option>
+  <option value="5">Literary Art</option>
+</select>
+</div>
 </section>
 
 
 <section class="list-container__home">
 <div class="llist-con-div__home">
     <div class="txt-cont-div___home">
-        <h3>Limitied Edition</h3>
+        <h3><span>Painting</span><span> , </span><span>Realism</span></h3>
         <p>find artworks that has fewer copy</p>
     </div>
     <div class="trend-cont__home">
     {% include "../Aucation/Trends.html" %}
     </div>
 </div>
-<div class="llist-con-div__home">
-    <div class="txt-cont-div___home">
-        <h3>Pop Art</h3>
-        <p>see the pop art.</p>
-    </div>
-    <div class="trend-cont__home">
-    {% include "../Aucation/Trends.html" %}
-    </div>
-</div>
-<div class="llist-con-div__home">
-    <div class="txt-cont-div___home">
-        <h3>Oil Painting</h3>
-        <p>find out oil Painting on colocation.</p>
-    </div>
-    <div class="trend-cont__home">
-    {% include "../Aucation/Trends.html" %}
-    </div>
-</div>
+
+
 
 
 
