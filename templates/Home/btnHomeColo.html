@@ -30,7 +30,7 @@
 
 .style-select___btncolo select {
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 1em;
   padding: .25em;
   border: 0;
   border-bottom: 2px solid currentcolor; 
@@ -47,7 +47,42 @@
 }
 
 
+.sort-div__homebtn{
+    display: flex;
+    margin-left: 1em;
+    
+}
+.sort-div__homebtn div span{
+    font-size: 2em;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+}
 
+.hover-sort__btnhome{
+    position: absolute;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #c9c9c960;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    transform: translateX(-15%);
+    color: #0000008c;
+    display: none;
+    margin-top: -1px;
+}
+.hover-sort__btnhome p{
+    color: #0000008c;
+    cursor: pointer;
+}
+.div-favorite__btnhomr:hover  .facotite-op__btnhome{
+    display: block;
+}
+.div-money__btnhomr:hover  .money-op__btnhome{
+    display: block;
+}
+.div-time__btnhomr:hover  .time-op__btnhome{
+    display: block;
+}
     </style>
 
 <div id="mifaColonHome">
@@ -55,7 +90,35 @@
 <section class="mifaaucation__home">
     <h1>MIFAfest</h1>
     <p>find the best collocation lorem lorem.</p>
+    <div class="sort-div__homebtn">
+        
+        <div class="div-favorite__btnhomr">
+            <span class="material-symbols-outlined">favorite</span>
+            <div class="hover-sort__btnhome facotite-op__btnhome ">
+                <p>most wanted</p>
+                <p>less wanted</p>
+            </div>
+        </div>
 
+        <div class="div-money__btnhomr">
+            <span class="material-symbols-outlined">attach_money</span>
+            <div class="hover-sort__btnhome money-op__btnhome ">
+                <p>Most Expensive</p>
+                <p>Cheapest</p>
+            </div>
+        </div>
+
+        <div class="div-time__btnhomr">
+            <span class="material-symbols-outlined">schedule</span>
+            <div class="hover-sort__btnhome time-op__btnhome ">
+                <p>Newest</p>
+                <p>oldest</p>
+            </div>
+        </div>
+
+     
+
+    </div>
 <div class="style-select___btncolo">
 <select>
   <option value="" selected="selected" disabled="disabled">Pick A Major</option>
