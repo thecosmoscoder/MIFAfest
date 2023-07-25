@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .poster__mifahost{
+            display: flex;
+            padding: 20px;
+        }
+
+        .poster-left__mifahost{
+            width: 40%;
+            overflow: hidden;
+            margin-right: 2rem;
+            cursor: pointer;
+            color: #a1a1a1;
+        }
+        .poster-left__mifahost h1{
+            color: #444444;
+        }
+        .poster-left__mifahost img{
+            width: 100%;
+            
+        }
+
+        .poster-right__mifahost{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 50%;
+        
+        }
+        .poster-right__mifahost div{
+            overflow: hidden;
+            width: 23%;
+            cursor: pointer;
+            color: #a1a1a1;
+        }
+        .poster-right__mifahost div h3{
+            color: #444444;
+        }
+    </style>
+
+<section class="poster__mifahost">
+    <div class="poster-left__mifahost">
+        <img src="{% static './images/mifahost01.webp'%}" alt="" />
+        <p>residence</p>
+        <h1>By Nastaran Davoodi</h1>
+        <h3>17 May ,<span>Tehran</span></h3>
+    </div>
+
+<div class="poster-right__mifahost">
+    <div>
+        <img src="{% static './images/mifahost03.webp'%}" alt="" />
+        <p>residence</p>
+        <h3>By Nastaran Davoodi</h3>
+        <h4>17 May ,<span>Tehran</span></h4>
+    </div>
+
+    <div>
+        <img src="{% static './images/mifahost02.webp'%}" alt="" />
+        <p>gallary</p>
+        <h3>By Nastaran Davoodi</h3>
+        <h4>17 May ,<span>Tehran</span></h4>
+    </div>
+
+        
+    <div>
+        <img src="{% static './images/mifahost04.webp'%}" alt="" />
+        <p>residence</p>
+        <h3>By Nastaran Davoodi</h3>
+        <h4>17 May ,<span>Tehran</span></h4>
+    </div>
+
+
+    <div>
+        <img src="{% static './images/mifahost03.webp'%}" alt="" />
+        <p>gallary</p>
+        <h3>By Nastaran Davoodi</h3>
+        <h4>17 May ,<span>Tehran</span></h4>
+    </div>
+
+</div>
+
+</section>
+{% endblock content %}  
