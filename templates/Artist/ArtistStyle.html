@@ -4,15 +4,106 @@
 
   {% block content %}
       <style type="text/css">
-          
+      .style___artisr h1 , .style___artisr h3{
+        margin-left: 20px;
+        color: #a1a1a1;
+      }
+      .style___artisr h1{
+        color: #444444;
+      }
+      .style-select___artist select {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0);
+  &:focus, &:active {
+    outline: 0;
+   
+  }
+}
+
       </style>
 
-<section>
+<section class="style___artisr">
+<h1>Choose person you like!</h1>
+<h3>pick what you want based on diffrent catagories.</h3>
+
+<div class="style-select___artist">
 <select>
-    <option>Realist</option>
-    <option>Dada</option>
-    <option>Minimallist</option>
-    <option>Pop artist</option>
+  <option value="" selected="selected" disabled="disabled">Pick A Major</option>
+  <option value="1">Painting</option>
+  <option value="2">Sculpture</option>
+  <option value="3">Photography</option>
+  <option value="4">Digital Art</option>
+  <option value="5">Drawing</option>
+  <option value="5">Calligraphy</option>
+  <option value="5">Mixed Media</option>
+  <option value="5">Printmaking</option>
+  <option value="5">Textile Art</option>
+  <option value="5">Installation Art</option>
+  <option value="5">Jewelry and luxury Art</option>
+  <option value="5">Performance Art</option>
+  <option value="5">Literary Art</option>
 </select>
+
+<select>
+  <option value="" selected="selected" disabled="disabled">Pick A Style</option>
+  <option value="1">Realist</option>
+  <option value="2">Sculpture</option>
+  <option value="3">Photography</option>
+  <option value="4">Digital Art</option>
+  <option value="5">Drawing</option>
+  <option value="5">Calligraphy</option>
+  <option value="5">Mixed Media</option>
+  <option value="5">Printmaking</option>
+  <option value="5">Textile Art</option>
+  <option value="5">Installation Art</option>
+  <option value="5">Jewelry and luxury Art</option>
+  <option value="5">Performance Art</option>
+  <option value="5">Literary Art</option>
+</select>
+</div>
+
+<section class="maoin-exa__artist">
+<span class="material-symbols-outlined" id="beforeScrollArtist">arrow_back_ios</span>
+    <div>
+        <img src="{% static './images/art-p01.webp'%}" alt="" />
+        <h1>Isun Mollae</h1>
+        <p>crazy moment</p>
+    </div>
+
+    <div>
+        <img src="{% static './images/art-p02.webp'%}" alt="" />
+        <h1>Isun Mollae</h1>
+        <p>crazy moment</p>
+    </div>
+
+    <div>
+        <img src="{% static './images/art-p03.webp'%}" alt="" />
+        <h1>Isun Mollae</h1>
+        <p>crazy moment</p>
+    </div>
+
+    <div>
+        <img src="{% static './images/art-p02.webp'%}" alt="" />
+        <h1>Isun Mollae</h1>
+        <p>crazy moment</p>
+    </div>
+
+    <div>
+        <img src="{% static './images/art-p03.webp'%}" alt="" />
+        <h1>Isun Mollae</h1>
+        <p>crazy moment</p>
+    </div>
+
+<span class="material-symbols-outlined" id="nextScrollArtist">arrow_forward_ios</span>
+</section>
 </section>
   {% endblock content %}  
