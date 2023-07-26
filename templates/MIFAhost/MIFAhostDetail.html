@@ -34,6 +34,45 @@
         .txt-conta__detailhost h1{
             color: #252525;
         }
+
+        .timg-section__hostd{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .timg-section__hostd img{
+            width: 70%;
+            border-top-left-radius: 20px;
+        }
+        .right-div-cont__hostd{
+            width: 20%;
+            margin-left: 20px;
+        }
+
+        .right-div-cont__hostd p{
+            color: #4e4e4e;
+        }
+        .right-div-cont__hostd p:nth-child(1), .right-div-cont__hostd p:nth-child(2){
+            display: flex;
+            align-items: center;
+        }
+        .right-div-cont__hostd p:nth-child(3){
+            color: #a1a1a1;
+        }
+
+
+
+        .txt-cont__hostd{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            letter-spacing: .05em;
+            word-spacing: .4em;
+        }
+        .txt-cont__hostd span{
+            margin: 1rem 0 1rem 0;
+            line-height: 1.3rem;
+        }
     </style>
 {% include "../Header/Header.html" %}
 
@@ -49,6 +88,34 @@
         <span class="material-symbols-outlined">share</span>
     </div>
 
-
 </section>
+
+<section class="timg-section__hostd">
+    <img src="{% static './images/detailHost.jpg'%}" alt="" />
+
+    <div class="right-div-cont__hostd">
+        <p><span class="material-symbols-outlined">event</span>25 July - 27th</p>
+        <p><span class="material-symbols-outlined">location_on</span>Tehran</p>
+        <p><span>The information about this event is provided and managed by the organizer. Notice that events are supervise by MIFAhost.</span></p>
+    </div>
+</section>
+
+
+<section class="txt-cont__hostd">
+<span>Shirana Shahbazi</span>
+<span>25 July - 27th</span>
+<span>Artist talk with Shirana Shahbazi and art historian and curator Madeleine Schuppli Sunday, June 11th, 12 pm - 1 pm</span>
+<span>Galerie Peter Kilchmann is pleased to present the gallery’s fourth solo exhibition with Shirana Shahbazi (*1974 in Tehran, Iran; lives and works in Zurich). The exhibition features all new works that explore the potential and diversity of photography and its content and technique reaching far beyond the limits of the medium. The artist will incorporate two groups of works consisting of multi-part lithographs and hand-colored silver gelatin prints in sculptural ceramic frames, a colorful wall installation with surfaces of ceramic, and, as a premier for the artist, a cinematographic work. A talk with Shirana Shahbazi and curator/art historian Madeleine Schuppli will take place on Sunday, June 11 at 12pm during Zurich Art Weekend.</span>
+<span>Works by Shirana Shahbazi are in the collections of major institutions worldwide, including the Aargauer Kunsthaus, Aarau; Centre Georges Pompidou, Paris; Fotomuseum Winterthur; Guggenheim Museum, New York; Migros Museum für Gegenwartskunst, Zürich; Museum of Modern Art (MoMA), New York; Tate Modern, London; National Museum of Photography, Copenhagen; Sprengel Museum, Hannover; and many more. Important solo exhibitions have taken place at Kunsthaus Hamburg (2018); Istituto Svizzero, Milan (2018); Museum Fotogalleriet, Oslo (2017); KINDL, Berlin (2017); Camera Austria, Graz (2016); and Kunsthalle, Bern (2014), among others. Major group exhibitions in recent years include In the Now, Brooklyn Museum (2022); Smoke and Mirrors, Kunsthaus Zürich (2020) and Guggenheim Museum Bilbao (2021); Niko Pirosmani, Fondation Vincent Van Gogh, Arles (2019); Swiss Pavilion: House Tour, 16th International Architecture Biennale, Venice (2018); and The Other and Me, Sharjah Art Museum, Sharjah (2014).</span>
+<span>Opening hours Zurich Art Weekend
+
+Friday,  June 9th, 11 am -  8 pm
+Saturday, June 10th, 11 am - 8 pm
+Sunday, June 11th, 11 am - 6 pm
+Monday, June 12th, 10 am - 6 pm
+
+For more information, please contact Fabio Pink: fabio@peterkilchmann.com</span>
+</section>
+
+{% include "../Footer/Footer.html" %}
 {% endblock content %}  
