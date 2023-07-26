@@ -14,6 +14,38 @@
             gap: 20px;
         }
        
+       .select-cont__host{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+       }
+       .select-cont__host label{
+        font-size: 1.2em;
+        font-family: inherit;
+        color: #a1a1a1;
+       }
+       .select-cont__host select{
+        margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid #777777; 
+
+  letter-spacing: .05em;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: large;
+  color: #575757;
+  background-color: rgba(240, 248, 255, 0);
+  width: fit-content;
+  &:focus, &:active {
+    outline: 0;
+  }
+  
+       }
+
+.select-div__host{
+    display: flex;
+}
     </style>
 <div class="nav-mifahost__hr"><hr /></div>
 <section class="nav-mifa__host">
@@ -28,7 +60,42 @@
 
 
 
-<section class="location-div__host">
+<section class="select-div__host">
+<div class="select-cont__host">
+    <label>Type: </label>
+    <select>
+        <option>residence</option>
+        <option>gallary</option>
+    </select>
+</div>
+
+<div class="select-cont__host">
+    <label>city: </label>
+    <select>
+        <option>tehran</option>
+        <option>newyork</option>
+        <option>newdehli</option>
+    </select>
+</div>
+
+<div class="select-cont__host">
+    <label>status: </label>
+    <select>
+        <option>open</option>
+        <option>closed</option>
+    </select>
+</div>
+
+<div class="select-cont__host">
+    <label>Access: </label>
+    <select>
+        <option>public</option>
+        <option>vip</option>
+    </select>
+</div>
+
+
+
 
 
 </section>
