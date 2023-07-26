@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+   MIFAfest - Eventname
+{% endblock title %}
+
+{% block content %}
+    <style type="text/css">
+        .head-host-detail__host{
+            padding-top: 6rem;
+            display: flex;
+            padding-left: 4rem;
+        }
+
+        .right-headdeta__host{
+            position: absolute;
+            right: 15%;
+            margin-top: 7vh;
+            
+        }
+        .right-headdeta__host span{
+            font-size: 2em;
+            cursor: pointer;
+            border: 1px solid #4e4e4e48;
+            color: #4e4e4e;
+            border-radius: 3px;
+            margin: 0 5px 0 5px;
+        }
+    </style>
+{% include "../Header/Header.html" %}
+
+<section class="head-host-detail__host">
+
+    <div>
+        <h3>Residence, Tehran</h3>
+        <h1>Shirana Shahbazi</h1>
+    </div>
+
+    <div class="right-headdeta__host">
+        <span class="material-symbols-outlined">bookmark_add</span>
+        <span class="material-symbols-outlined">share</span>
+    </div>
+
+
+</section>
+{% endblock content %}  

@@ -27,6 +27,6 @@ urlpatterns = [
     path('artist/', TemplateView.as_view(template_name='./Artist/Artist.html'), name='artist'),
     path('mifaaucation/', TemplateView.as_view(template_name='./Aucation/Aucation.html'), name='aucation'),
     path('mifahost/', TemplateView.as_view(template_name='./MIFAhost/MIFAhost.html'), name='mifahost'),
-
+    path('mifahost/detail', TemplateView.as_view(template_name='./MIFAhost/MIFAhostDetail.html'), name='mifahostdetail'),
 
 ]
