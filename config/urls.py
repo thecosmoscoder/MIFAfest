@@ -29,5 +29,7 @@ urlpatterns = [
     path('mifahost/', TemplateView.as_view(template_name='./MIFAhost/MIFAhost.html'), name='mifahost'),
     path('mifahost/detail', TemplateView.as_view(template_name='./MIFAhost/MIFAhostDetail.html'), name='mifahostdetail'),
     path('collocation/', TemplateView.as_view(template_name='./Collocation/PageColo.html'), name='pcollocation'),
+    path('artspeak/', TemplateView.as_view(template_name='./ArtSpeak/ArtSpeak.html'), name='artspeak'),
+
 
 ]
