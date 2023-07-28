@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+   Collocation
+{% endblock title %}
+
+{% block content %}
+    <style type="text/css">
+        .first-title__colo{
+            padding-top: 6rem;
+        }
+        .first-title__colo hr{
+            width: 90%;
+        }
+        .first-title__colo h1{
+            margin-left: 2%;
+            color: #4d4d4d;
+        }
+
+        .colo-btn__colo{
+            display: flex;
+            padding: 20px;   
+            flex-wrap: wrap;
+        }
+        .div-colo-btn__colo{
+            display: flex;
+            flex-direction: column;
+            margin: 0 1px 0 10px; 
+        }
+        .div-colo-btn__colo span{
+            font-size: 13px;
+        }
+        .div-colo-btn__colo img{
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+{% include "../Header/Header.html" %}
+
+<section class="first-title__colo">
+<h1>Find Your Collocation</h1>
+<hr />
+</section>
+
+<section class="colo-btn__colo">
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Painting</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Sculpture</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Photography</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Art Digital</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Drawing</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Calligraphy</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Mixed Media</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Printmaking</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Textile Art</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Installation</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Jewelry</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Performance</span>
+    </div>
+    <div class="div-colo-btn__colo">
+        <img src="{% static './images/smallpre.webp'%}" alt="" />
+        <span>Literary Art</span>
+    </div>
+
+</section>
+{% endblock content %}  

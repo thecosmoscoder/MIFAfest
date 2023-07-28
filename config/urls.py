@@ -21,12 +21,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='./main.html'), name='home'),
     path('test/', TemplateView.as_view(template_name='./Home/Home.html')),
-    path('collocation/', TemplateView.as_view(template_name='./Collocation/Collocation.html'), name='collocation'),
+    path('collocation/detail', TemplateView.as_view(template_name='./Collocation/Collocation.html'), name='collocation'),
     path('auth/', TemplateView.as_view(template_name='./Auth/Auth.html'), name='auth'),
     path('profile/', TemplateView.as_view(template_name='./Profile/Profile.html'), name='profile'),
     path('artist/', TemplateView.as_view(template_name='./Artist/Artist.html'), name='artist'),
     path('mifaaucation/', TemplateView.as_view(template_name='./Aucation/Aucation.html'), name='aucation'),
     path('mifahost/', TemplateView.as_view(template_name='./MIFAhost/MIFAhost.html'), name='mifahost'),
     path('mifahost/detail', TemplateView.as_view(template_name='./MIFAhost/MIFAhostDetail.html'), name='mifahostdetail'),
+    path('collocation/', TemplateView.as_view(template_name='./Collocation/PageColo.html'), name='pcollocation'),
 
 ]
