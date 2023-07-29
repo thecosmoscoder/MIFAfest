@@ -18,6 +18,42 @@
             top: 15%;
             left: 5%;
         }
+
+        .control-btn__home{
+        
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .control-btn__home hr{
+        width: 90%;
+        z-index: -1;
+    }
+
+    .div-in-btn__home{
+            display: flex;
+            margin: 1rem 10% 0 5%;
+            justify-content: space-between;
+            text-align: left;
+            color: rgb(87, 87, 87);
+            font-size: 20px;
+            font-family: inherit;
+            font-weight: bold;
+        }
+
+        .div-in-btn__home span{
+            cursor: pointer;
+        }
+
+    .div-in-btn__homeActive, #speaHightli{
+        color: #000; 
+        text-decoration: underline;
+        text-underline-offset: 12px;
+    }
+    .div-in-btn__homeUnActive{
+        color: rgb(87, 87, 87);
+        text-decoration: none;
+    }
     </style>
 {% include "../Header/Header.html" %}
 
@@ -27,5 +63,16 @@
         <h1>Lorem Lorem</h1>
         <span>lorem lorem lorem s</span>
     </div>
+</section>
+
+<section class="control-btn__sp">
+    <div class="div-in-btn__home">
+    <span class="mifa-btn__home" id="speaHightli">Highlight</span>
+    <span class="mifa-btn__home" id="">Past</span>
+    <span class="mifa-btn__home" id="">Up Comming</span>
+    
+        
+    </div>
+    <hr />
 </section>
 {% endblock content %}  
