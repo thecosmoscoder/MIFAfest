@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .img-conta__aucation{
+                display: flex;
+                padding: 30px;
+        }
+        .img-conta__aucation img{
+                width: 60%;
+        }
+        .right-detail___aucation{
+                display: flex;
+                flex-direction: column;
+                margin-left: 2%;
+        }
+    </style>
+
+  <section class="img-conta__aucation">
+        <img src="{% static './images/colo-ex04.webp' %}" alt="" />
+        <div class="right-detail___aucation">
+                <h1>Mahla Moghadsi</h1>
+                <h3>Desert Song</h3>
+                <span>painting</span>
+                <hr />
+                <span>Estimated value: <span>2000$ - </span></span>
+                <h1>starting Bid <span>2000$</span></h1>
+                <hr />
+                <h3>Place Bid</h3>
+                <span>$<input type="number" value=""></span>
+                <button>BID</button>
+                <span>timer</span>
+                <span>July 25th, 10pm</span>
+        </div>
+  </section>
+{% endblock content %}  
+
