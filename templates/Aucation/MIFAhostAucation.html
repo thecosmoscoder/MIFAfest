@@ -5,22 +5,24 @@
 {% block content %}
     <style type="text/css">
         .mifahost__auca{
-            display: flex;
-            justify-content: space-around;
-            background-color: #fff;
-            padding: 5px;
             font-size: xxx-large;
             color: rgba(0, 0, 0, 0.9);
             text-shadow: 0px 3px 7px rgba(0,0,0,0.19);
             margin-bottom: -7vh;
         }
+        .mifahost__auca div{
+            position: absolute;
+        }
+        .mifahost__auca div h1{
+            color: rgb(246, 243, 243);
+        }
          .mifahost__auca h6{
             font-size: xx-large;
             margin: -10vh 0 1rem 2rem;
-            color: #4d4d4d;
+            color: rgb(255, 255, 255);;
          }
         .mifahost__auca img{
-            width: 60%;
+            width: 100%;
             border-radius: 20px;
             box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
         }
@@ -28,11 +30,10 @@
 
 <section class="mifahost__auca"> 
     <div>
-        <h1>MIFAhost</h1>
-        <h6>Be Host For MIFA.</h6>
-        <button class="show-more-btn__auca">Learn More</button>
+        <h1>MIFAaucation</h1>
+        <h6>Find What Best For You.</h6>
     </div>
 
-    <img src="{% static './images/random.jpg'%}" alt="" /> 
+    <img src="{% static './images/MifaAauctions01.jpg'%}" alt="" /> 
 </section>
 {% endblock content %}  
