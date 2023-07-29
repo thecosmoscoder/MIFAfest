@@ -7,8 +7,25 @@
 
 {% block content %}
     <style type="text/css">
-        
+        .first-main__artsp{
+            padding-top: 5rem;
+        }
+        .first-main__artsp img{
+            width: 100%;
+        }
+        .first-main__artsp div{
+            position: absolute;
+            top: 15%;
+            left: 5%;
+        }
     </style>
 {% include "../Header/Header.html" %}
 
+<section class="first-main__artsp">
+    <img src="{% static './images/ArtSpeak.jpg'%}" alt="" />
+    <div>
+        <h1>Lorem Lorem</h1>
+        <span>lorem lorem lorem s</span>
+    </div>
+</section>
 {% endblock content %}  
