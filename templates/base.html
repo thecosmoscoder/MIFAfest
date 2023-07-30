@@ -303,6 +303,58 @@ $(document).ready(function() {
 
 
 
+// art speak
+$(document).ready(function() {
+  var images = [
+  "{% static './images/ArtSpeak/AS01.jpg' %}",
+  "{% static './images/ArtSpeak/AS02.jpg' %}", 
+  "{% static './images/ArtSpeak.jpg'%}",
+];
+
+
+var count = 0;
+
+setInterval(function() {
+
+  $('#arspImgSlide').fadeOut(500, function() {
+    $(this).attr('src', images[count]).fadeIn(500); 
+  });
+
+  count++;
+  if(count == images.length) {
+    count = 0;
+  }
+
+}, 3000);
+
+
+$('#nextArtistDe').click(function() {
+
+  $('#').fadeOut(500, function() {
+    $(this).attr('src', '{% static './images/colo-ex03.webp'%}').fadeIn(500); 
+  });
+
+  $('#twoImgInArtistPage').fadeOut(500, function() {
+    $(this).attr('src', '{% static './images/colo-ex04.webp'%}').fadeIn(500);
+  });
+
+});
+
+$('#beforeArtistDe').click(function() {
+
+  $('#').fadeOut(500, function() {
+    $(this).attr('src', '{% static './images/colo-ex02.webp'%}').fadeIn(500);
+  });
+  
+  $('#twoImgInArtistPage').fadeOut(500, function() {
+    $(this).attr('src', '{% static './images/colo-ex02.webp'%}').fadeIn(500); 
+  });
+
+});
+
+});
+
+
     </script>
 </head>
 
