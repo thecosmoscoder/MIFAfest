@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+
+        .submi-section__arsp{
+            padding: 30px;
+        }
+        .submit__arsp {
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 1rem;
+ color: lightcoral;
+ box-shadow: 0 0.4rem #dfd9d9;
+ cursor: pointer;
+}
+
+.submit__arsp:active {
+ color: white;
+ box-shadow: 0 0.2rem #dfd9d9;
+ transform: translateY(0.2rem);
+}
+
+.submit__arsp:hover:not(:disabled) {
+ background: lightcoral;
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.submit__arsp:disabled {
+ cursor: auto;
+ color: grey;
+}
+    </style>
+
+<section class="submi-section__arsp">
+    <button class="submit__arsp">Submit a Artwork!</button>
+</section>
+{% endblock content %}  
+
