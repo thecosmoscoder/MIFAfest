@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <style type="text/css">
+        .hover-sort__btnhome{
+            z-index: 100;
+        }
+    </style>
+
+<div class="sort-div__homebtn">
+        
+    <div class="div-favorite__btnhomr">
+        <span class="material-symbols-outlined">favorite</span>
+        <div class="hover-sort__btnhome facotite-op__btnhome ">
+            <p>most wanted</p>
+            <p>less wanted</p>
+        </div>
+    </div>
+
+    <div class="div-money__btnhomr">
+        <span class="material-symbols-outlined">attach_money</span>
+        <div class="hover-sort__btnhome money-op__btnhome ">
+            <p>Most Expensive</p>
+            <p>Cheapest</p>
+        </div>
+    </div>
+
+    <div class="div-time__btnhomr">
+        <span class="material-symbols-outlined">schedule</span>
+        <div class="hover-sort__btnhome time-op__btnhome ">
+            <p>Newest</p>
+            <p>oldest</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}  
+
+
+
+
+
+
+
+
+
