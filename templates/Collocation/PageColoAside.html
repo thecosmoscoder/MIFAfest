@@ -8,35 +8,48 @@
         width: 30%;
         padding: 10px;
        } 
+
 /* Hide the default checkbox */
-.blue-checkbox input[type="checkbox"] {
-    display: none;
+input[type="checkbox"] {
+  display: none;
 }
 
-/* Style the custom checkbox container */
-.blue-checkbox {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    font-size: 16px;
+/* Style the custom checkbox */
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 25px; /* Create space for the custom checkbox */
+  cursor: pointer;
 }
 
-/* Create the square checkmark */
-.blue-checkbox:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid blue;
+/* Create the custom checkbox shape */
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px; /* Adjust the size of the checkbox */
+  height: 20px;
+  border: 2px solid #000; /* Border color for unchecked checkbox */
+  background-color: #fff; /* Background color for unchecked checkbox */
 }
 
-/* Show the square checkmark when the checkbox is checked */
-.blue-checkbox input[type="checkbox"]:checked + .blue-checkbox:before {
-    background-color: blue;
+/* Style the custom checkbox when checked */
+input[type="checkbox"]:checked + label::before {
+  background-color: #6e7379; /* Change the background color for checked checkbox */
+  border-color: #24272b; /* Change the border color for checked checkbox */
 }
 
+.chenbox-container{
+    padding: 5px;
+}
+
+.chenbox-container div{
+    margin: 10px;
+}
+.chenbox-container span{
+    margin-left: 5px;
+
+}
 
     </style>
 
@@ -46,61 +59,74 @@
     <hr />
 
     <h3>ArtWorks</h3>
+    <div class="chenbox-container">
     <div>
-    <div>
-        <label class="blue-checkbox">
-            <input type="checkbox" value="" />
-        </label>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Sculpture</span>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Photography</span>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Digital Art</span>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Drawing</span>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Calligraphy</span>
-    </div>
-    <div>
-        <input type="checkbox" value="" />
-        <span>Mixed Media</span>
+        <input type="checkbox" id="Painting">
+        <label for="Painting"><span>Painting</span></label>
     </div>
 
     <div>
-        <input type="checkbox" value="" />
-        <span>Printmaking</span>
+        <input type="checkbox" id="Sculpture">
+        <label for="Sculpture"><span></span> Sculpture</label>
     </div>
+
     <div>
-        <input type="checkbox" value="" />
-        <span>Textile Art</span>
+        <input type="checkbox" id="Photography">
+        <label for="Photography"><span></span>Photography</label>
     </div>
+
     <div>
-        <input type="checkbox" value="" />
-        <span>Installation Art</span>
+        <input type="checkbox" id="DigitalArt">
+        <label for="DigitalArt"><span></span>Digital Art</label>
     </div>
+
     <div>
-        <input type="checkbox" value="" />
-        <span>Jewelry and luxury Art</span>
+        <input type="checkbox" id="Drawing">
+        <label for="Drawing"><span></span>Drawing</label>
     </div>
+
     <div>
-        <input type="checkbox" value="" />
-        <span>Performance Art</span>
+        <input type="checkbox" id="Calligraphy">
+        <label for="Calligraphy"><span></span>Calligraphy</label>
     </div>
+
     <div>
-        <input type="checkbox" value="" />
-        <span>Literary Art</span>
+        <input type="checkbox" id="MixedMedia">
+        <label for="MixedMedia"><span></span>Mixed Media</label>
     </div>
+
+    <div>
+        <input type="checkbox" id="Printmaking">
+        <label for="Printmaking"><span></span>Printmaking</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="TextileArt">
+        <label for="TextileArt"><span></span>Textile Art</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="InstallationArt">
+        <label for="InstallationArt"><span></span>Installation Art</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Jewelry">
+        <label for="Jewelry"><span></span>Jewelry and luxury Art</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Performance">
+        <label for="Performance"><span></span>Performance Art</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Literary">
+        <label for="Literary"><span></span>Literary Art</label>
+    </div>
+
+
+
     </div>
 
 
@@ -110,14 +136,17 @@
 
 
     <h3>Price</h3>
-    <select>
-        <option>under $1000</option>
-        <option>under $1000</option>
-        <option>under $1000</option>
-        <option>under $1000</option>
-        <option>under $1000</option>
-        <option>under $1000</option>
+    <div class="sort-div__colo">
+        <select>
+      <option value="" selected="selected" disabled="disabled">Price: </option>
+      <option value="1">under $1000</option>
+      <option value="1">under $1000</option>
+      <option value="1">under $1000</option>
+      <option value="1">under $1000</option>
+      <option value="1">under $1000</option>
+      <option value="1">under $1000</option>
     </select>
+    </div>
 
 </aside>
 
