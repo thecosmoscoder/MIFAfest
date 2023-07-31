@@ -9,21 +9,104 @@
 
         .btn-mifa-host__home{
             display: flex;
-            justify-content: center;
+            
             align-items: center;
-            font-size: xxx-large;
+            font-size: large;
             color: #444444;
             text-align: center;
         }
+        .txt-conr__hosthome{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+        }
+
+        .subjects-cont___hosthome{
+            padding: 30px;
+            display: flex;
+            width: 100%;
+        }
+        .newest-host___btnhome{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-right: 5px;
+        }
+        .newest-host___btnhome img{
+            width: 100%;
+            border-top-left-radius: 20px;
+            cursor: pointer;
+        }
+        .newest-host___btnhome p{
+            font-size: small;
+            color: #9c9c9c;
+        }
+
+        .newest-host___btnhome span{
+            color: #444;
+        }
      
+
+        .small-contaier___hosthome{
+            width: 40%;
+            display: flex;
+            
+        }
+        .small-host___btnhome{
+            display: flex;
+            flex-direction: column;
+            margin: 4px;
+        }
+        .small-host___btnhome img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .small-host___btnhome p{
+            font-size: small;
+            color: #9c9c9c;
+        }
+        .small-host___btnhome span{
+            color: #444;
+        }
     </style>
 <div id="btnHomeHost">
 
 <section class="btn-mifa-host__home">
-<div>
+<div class="txt-conr__hosthome">
 <h1>MIFAhost</h1>
-<p>Be host for MIFAfest.</p>
+<span>See others.</span>
 </div>
+</section>
+
+<section class="subjects-cont___hosthome">
+    <div class="newest-host___btnhome">
+        <img src="{% static './images/detailHost.jpg' %}" alt="" />
+        <p>Residnece - Tehran</p>
+        <span>MAhla Mahsa <span>: 23 July - 27th</span></span>
+    </div>
+
+    <div class="small-contaier___hosthome">
+        <div class="small-host___btnhome">
+            <img src="{% static './images/detailHost.jpg' %}" alt="" />
+            <p>Residnece - Tehran</p>
+            <span>MAhla Mahsa <span>: 23 July - 27th</span></span>
+        </div>
+
+        <div class="small-host___btnhome">
+            <img src="{% static './images/detailHost.jpg' %}" alt="" />
+            <p>Residnece - Tehran</p>
+            <span>MAhla Mahsa <span>: 23 July - 27th</span></span>
+        </div>
+
+        <div class="small-host___btnhome">
+            <img src="{% static './images/detailHost.jpg' %}" alt="" />
+            <p>Residnece - Tehran</p>
+            <span>MAhla Mahsa <span>: 23 July - 27th</span></span>
+        </div>
+
+     
+    </div>
 </section>
 
 </div>
