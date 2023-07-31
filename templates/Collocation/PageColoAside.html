@@ -8,6 +8,36 @@
         width: 30%;
         padding: 10px;
        } 
+/* Hide the default checkbox */
+.blue-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox container */
+.blue-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Create the square checkmark */
+.blue-checkbox:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid blue;
+}
+
+/* Show the square checkmark when the checkbox is checked */
+.blue-checkbox input[type="checkbox"]:checked + .blue-checkbox:before {
+    background-color: blue;
+}
+
+
     </style>
 
 <aside>
@@ -18,8 +48,9 @@
     <h3>ArtWorks</h3>
     <div>
     <div>
-        <input type="checkbox" value="" />
-        <span>Painting</span>
+        <label class="blue-checkbox">
+            <input type="checkbox" value="" />
+        </label>
     </div>
     <div>
         <input type="checkbox" value="" />
@@ -73,19 +104,18 @@
     </div>
 
 
-    <hr />
-    <h3>Poupolarity</h3>
-    <div>
-        <input type="checkbox" value="" />
-        <span>mostwanted</span>
-    </div>
-    
+ 
 
     <hr />
 
 
     <h3>Price</h3>
     <select>
+        <option>under $1000</option>
+        <option>under $1000</option>
+        <option>under $1000</option>
+        <option>under $1000</option>
+        <option>under $1000</option>
         <option>under $1000</option>
     </select>
 
