@@ -38,6 +38,31 @@
 .aside-and___colo{
         display: flex;
 }
+
+
+.show-more-btn__auca {
+  
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  color: #000;
+  padding: 0.5em 0.6em;
+  background: #fff;
+  display: flex;
+  
+  align-items: center;
+  gap: 0.1em;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+.div-show-more-btn__auca{
+        display: flex;
+        justify-content: center;
+}
+
     </style>
 <div class="aside-and___colo">
 {% include "./PageColoAside.html" %}
@@ -97,6 +122,13 @@
             <p>Mirror in Desert</p>
             <p>10,000 $ <span> 10 / 10 copy</span></p>
     </div>
-</section>
+
+<div class="div-show-more-btn__auca">
+        <button class="show-more-btn__auca">
+            Show More<span class="material-symbols-outlined">arrow_drop_down</span>
+        </button>
+        </div>
 </div>
+</section>
+
 {% endblock content %}  
