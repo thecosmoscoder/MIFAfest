@@ -36,7 +36,7 @@ nav .menu-item {
     justify-content: center;
     perspective: 200px;
     letter-spacing: 0.5px;
-    min-height: 7.5em;
+    max-height: 5.5em;
 
 }
 
@@ -69,7 +69,7 @@ nav .menu-text a:hover {
     border-radius: 10px;
     background: white;
     display: block;
-    height: 300px;
+   
     width: calc(var(--menu-width) * 1.5);
     
 }
