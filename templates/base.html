@@ -384,6 +384,52 @@ $('#beforeArtistDe').click(function() {
 });
 
 
+
+// fixed auvation
+
+$(document).ready(function() {
+   
+const btn = $('.marquee-item');
+const divToShow = $('.sticky-secti__aucarionhome'); 
+
+
+$(window).scroll(function() {
+
+  const scrollPos = $(this).scrollTop();
+  
+  // Check if scroll position is >= button position
+  if(scrollPos >= btn.offset().top) {
+    
+    // Show the div
+    
+    $(".sticky-secti__aucarionhome").css("display", "flex");
+    
+  } else {
+  
+    // Hide the div
+    divToShow.hide();
+    
+  }
+  
+});
+});
+
+
+
+$(document).ready(function () {
+  $('.close-btn___fixauca').click(function() {
+        $('.sticky-secti__aucarion').hide();
+    });
+    $('.close-btn___fixauca').click(function() {
+        $('.sticky-secti__aucarionhome').hide();
+    });
+  
+  
+        });
+
+
+
+
     </script>
 </head>
 
