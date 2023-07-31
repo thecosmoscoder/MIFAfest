@@ -17,15 +17,24 @@
         .attention-cont__aucaio{
                 display: flex;
                 align-items: center;
+                
+        }
+        .attention-cont__aucaio span:nth-child(1){
+                color: rgba(82, 0, 0, 0.911);
+        }
+        .attention-cont__aucaio span:nth-child(2){
+                color: rgba(66, 66, 66, 0.911);
         }
     </style>
 
   <section class="sticky-secti__aucarion">
-        <span>MIFAaucation : <span>mahla mola - desert</span></span>
+        
         <div class="attention-cont__aucaio">
                 <span class="material-symbols-outlined">notification_important</span>
-                <span>this MIFAaucation ends: <span>timer</span></span>
+                <span>this MIFAaucation ends: </span>
+                <span> <div id="countdown"> </div></span>
         </div>
+        <span>MIFAaucation : <span>mahla mola - desert</span></span>
         
   </section>
 {% endblock content %}  
