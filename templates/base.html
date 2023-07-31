@@ -83,7 +83,7 @@
           color: #4d4d4d;
         }
 
-        #countdown{
+        .countdown{
           color: #ff02dd;
         }
        
@@ -315,7 +315,7 @@ var interval = setInterval(function () {
     // Check if the target date has already passed
     if (diff <= 0) {
         clearInterval(interval);
-        $('#countdown').text("Countdown Ended");
+        $('.countdown').text("Countdown Ended");
     } else {
         var duration = moment.duration(diff);
         var days = duration.days();
@@ -325,7 +325,7 @@ var interval = setInterval(function () {
 
         // Format the countdown
         var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-        $('#countdown').text(countdownText);
+        $('.countdown').text(countdownText);
     }
 }, 1000); // 1000 milliseconds = 1 second
 
