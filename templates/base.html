@@ -401,13 +401,14 @@ $(window).scroll(function() {
   if(scrollPos >= btn.offset().top) {
     
     // Show the div
+    divToShow.slideDown(2000);
+    divToShow.css("display", "flex");
     
-    $(".sticky-secti__aucarionhome").css("display", "flex");
     
   } else {
   
     // Hide the div
-    divToShow.hide();
+    divToShow.hide()
     
   }
   
