@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .currect-host__hprof{
+            display: flex;
+            padding-left: 7%;
+            margin-top: 10px;
+        }
+         .currect-host__hprof .card {
+  
+  height: 365px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  flex: 0 0 auto;
+  width: fit-content;
+}
+
+.currect-host__hprof .card .card-image {
+  background-color: rgb(236, 236, 236);
+  width: 250px;
+  height: 70%;
+  border-radius: 6px 6px 0 0;
+}
+
+.currect-host__hprof .card .card-image:hover {
+  transform: scale(0.98);
+}
+
+.currect-host__hprof .card .category {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+  display: flex;
+  align-items: end;
+}
+
+.currect-host__hprof .card .category:hover {
+  cursor: pointer;
+}
+
+.currect-host__hprof .card .heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.currect-host__hprof .card .heading:hover {
+  cursor: pointer;
+}
+
+.currect-host__hprof .card .heading .author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+.icon-card__host{
+    color: #444444;
+    font-family: inherit;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    background-color: #fff;
+    border: 1px #bbb solid;
+    padding: 10px;
+    transform: translateY(-280px);
+    display: none;
+    transition: display ease 2s;
+    border-radius: 5px;
+}
+
+.card:hover .icon-card__host{
+    display: flex;
+}
+
+
+    </style>
+
+<section class="currect-host__hprof">
+    <div class="card">
+        <div class="card-image"></div>
+        <div class="category"> <span class="material-symbols-outlined">location_on</span> TEHRAN </div>
+            
+                <div class="icon-card__host"><span class="material-symbols-outlined">edit_calendar</span>24 July - 26th</div>
+            
+        <div class="heading"> pop art - Oil Painting
+            <div class="author"> By <span class="name">Nastaran</span> 4 days ago</div>
+        </div>
+    </div>
+    <div>
+        <h1>some DETAIL</h1>
+    </div>
+</section>
+{% endblock content %}  
+

@@ -3,16 +3,50 @@
 
 {% block content %}
     <style type="text/css">
+        .control-btn__home{
         
+        display: flex;
+        flex-direction: column; 
+    }
+    .control-btn__home hr{
+        width: 90%;
+        z-index: -1;
+    }
+
+    .div-in-btn__home{
+            display: flex;
+            margin: 1rem 10% 0 5%;
+            
+            text-align: left;
+            color: rgb(87, 87, 87);
+            font-size: 20px;
+            font-family: inherit;
+            font-weight: bold;
+        }
+
+        .div-in-btn__home span{
+            cursor: pointer;
+        }
+
+    .div-in-btn__homeActive, #curreMIFAhost{
+        color: #000; 
+        text-decoration: underline;
+        text-underline-offset: 12px;
+        margin-right: 40px;
+    }
+    
+
     </style>
 
-<section>
-    <div>
-        <h3>Menu 1</h3>
-        <h3>Menu 2</h3>
-    </div>
-    <div class="hr-cont__hostprof"><hr /></div>
 
+<section class="control-btn__home">
+    <div class="div-in-btn__home">
+    <span class="mifa-btn__home" id="curreMIFAhost">Curect MIFAhost</span>
+    <span class="mifa-btn__home" id="pastMIFAhost">Pasts</span>        
+    </div>
+    <hr />
 </section>
+{% include './hostPcurrent.html' %}
+{% include './hostPpast.html' %}
 {% endblock content %}  
 
