@@ -7,9 +7,68 @@
 
 {% block content %}
     <style type="text/css">
-        
-    </style>
+        .main-head__mifaprof{
+            padding:6rem 2% 0 2%;
+            display: flex;
+        }
+        .info-contaner___hostprof{
+            width: 55%;
+            display: flex;
+        }
+        .info-contaner___hostprof img{
+            width: 50%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.64);
+-webkit-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.64);
+-moz-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.64);
+        }
 
+        .bio-cnottxt__hostprof{
+            width: 40%;
+        }
+        
+        .txt-nameres__mifaprof{
+            margin-left: 30px;
+        }
+        .txt-nameres__mifaprof h1{
+            color: #222;
+        }
+        .txt-nameres__mifaprof span{
+            color: #333;
+        }
+        .txt-nameres__mifaprof p{
+            color: #444;
+            font-size: small;
+            width: 70%;
+        }
+        .bio-cnottxt__hostprof h1{
+            color: #444;
+        }
+    </style>
 {% include '../Header/Header.html' %}
-{% endblock content %}  
+
+<section class="main-head__mifaprof">
+    <div class="info-contaner___hostprof">
+        <img src="{% static './images/ex-pro.jpeg' %}" alt="" />
+        <div class="txt-nameres__mifaprof"> 
+            <h1>Nastaran Daiag</h1>
+            <span>Residence </span>
+            <span> , </span>
+            <span> Tehran</span>
+            <p>
+                notice that lorem lore m ah aintings depict women in both peaceful repose and in unsettlin. 
+            </p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="bio-cnottxt__hostprof">
+        <h1>Bio</h1>
+        <span>Hayv Kahraman’s oil-on-linen paintings depict women in both peaceful repose and in unsettling contortions. Embracing material exploration, the Iraqi-born artist has sliced into her canvases, incorporated acoustic foam amid the linen, painted on</span>
+        <a><span>read more</span></a>
+    </div>
+</section>
+{% endblock content %} 
 
