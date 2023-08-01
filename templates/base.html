@@ -460,6 +460,27 @@ $(document).ready(function() {
       setInterval(changeTextWithFadeOut, 2000); // Call every 2 seconds
     });
 
+
+
+    //host profile
+    $(document).ready(()=>{
+      $('#curreMIFAhost').click(()=>{
+        $('.past-host__hprof').hide();
+        $('.tcyt-h3').hide();
+        $('.currect-host__hprof').show();
+        $('#pastMIFAhost').removeClass('div-in-btn__homeActive');
+        $('#curreMIFAhost').addClass('cure-btn__hprof');
+      });
+
+      $('#pastMIFAhost').click(()=>{
+        $('.currect-host__hprof').hide();
+        $('#pastMIFAhost').addClass('div-in-btn__homeActive');
+        $('#curreMIFAhost').removeClass('cure-btn__hprof');
+        $('.past-host__hprof').show();
+        $('.tcyt-h3').show();
+        $('.past-host__hprof').css('display', 'flex');
+      })
+    });
     </script>
 </head>
 
