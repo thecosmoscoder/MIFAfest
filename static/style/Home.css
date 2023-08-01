@@ -244,15 +244,16 @@ body{
 
 .third-donation{
   width: 60%;
-  height: 90vh;
+  
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: center;
   color: #6e6e6e;
+  
 }
 
 .third-donation h1{

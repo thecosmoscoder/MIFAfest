@@ -429,7 +429,36 @@ $(document).ready(function () {
         });
 
 
+// testi home support
+$(document).ready(function() {
+      // Array of texts to cycle through
+      const texts = [
+        "John Nail",
+        "Haward Hawks",
+        "David Lean",
+        "Billy Wilder",
+      ];
 
+      let currentIndex = 0;
+
+      function changeTextWithFadeOut() {
+        // Fade out the current text
+        $("#teatiName").fadeOut(500, function() {
+          // Update the text with the next one in the array
+          $(this).text(texts[currentIndex]);
+
+          // Increment the index for the next iteration
+          currentIndex = (currentIndex + 1) % texts.length;
+
+          // Fade in the new text
+          $(this).fadeIn(500);
+        });
+      }
+
+      // Call the function initially and every 2 seconds thereafter
+      changeTextWithFadeOut(); // Call initially
+      setInterval(changeTextWithFadeOut, 2000); // Call every 2 seconds
+    });
 
     </script>
 </head>
