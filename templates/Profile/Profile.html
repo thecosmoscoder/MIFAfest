@@ -191,12 +191,18 @@ cursor: pointer;
   filter: grayscale(0.86);
 }
 
-.social-logo-prof img{
-}
+
 .social-logo-prof img:hover{
   cursor: pointer;
 }
 
+.edit-prof__profile{
+  color: #fff;
+  margin-top: 15px;
+  text-underline-offset: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /* tess */
 
@@ -227,7 +233,7 @@ cursor: pointer;
       <div class="head-prof">
         <div>
           <h2>Mahla</h2>
-          <h3>oil painter</h3>
+          <h3>Artist</h3>
           
       <div class="social-logo-prof">
 
@@ -236,9 +242,13 @@ cursor: pointer;
         <img src="{% static './images/social-icons/pinterest.png' %}" alt="" style="width: 40px; height:auto;"/>
         <img src="{% static './images/social-icons/twitter.png' %}" alt="" style="width: 40px; height:auto;"/>
        
-    </div>
+      </div>
+
+      <div class="edit-prof__profile"><span>Edit Profile</span></div>
         </div>
-        <img src="{% static './images/ex-pro.jpeg' %}" />
+        <div class="div-imgcont___profil">
+          <img src="{% static './images/ex-pro.jpeg' %}" />
+        </div>
       </div>
       <div class="images">
         <img height="874" src="{% static './images/profile/1.jpg' %}" width="1240" />
