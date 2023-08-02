@@ -8,6 +8,35 @@
         text-decoration: underline;
         text-underline-offset: 12px;
         }
+        .trends-div__aspeak {
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgba(239, 239, 239, 0.046);
+            margin-left: 20px;
+            width: 20%;
+            border: rgba(54, 54, 54, 0.3) solid 1px;
+            cursor: pointer;
+            
+        }
+
+        .trends-div__aspeak img {
+            width: 100%;
+            
+        }
+        .trends-div__aspeak p, .trends-div__aspeak span{
+    margin-left: 10px;
+}
+
+.trends-div__aspeak p span{
+    color: #474554;
+}
+
+
+.card-contaner__speak{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
     </style>
 
 
@@ -16,6 +45,29 @@
     <span class="mifa-btn__home" id="pastspeaHightli">Past Art Calls</span>
     </div>
     <hr />
+</section>
+
+<section class="card-contaner__speak">
+    <div class="trends-div__aspeak">
+        <img src="{% static './images/maxresdefault.jpg' %}" alt="" />
+        <p>Names</p>
+        <p>brief detail</p>
+        <p>winner: <span>Isan Molae</span></p>
+    </div>
+
+    <div class="trends-div__aspeak">
+        <img src="{% static './images/maxresdefault.jpg' %}" alt="" />
+        <p>Names</p>
+        <p>brief detail</p>
+        <p>winner: <span>Isan Molae</span></p>
+    </div>
+
+    <div class="trends-div__aspeak">
+        <img src="{% static './images/maxresdefault.jpg' %}" alt="" />
+        <p>Names</p>
+        <p>brief detail</p>
+        <p>winner: <span>Isan Molae</span></p>
+    </div>
 </section>
 {% endblock content %}  
 
