@@ -481,6 +481,30 @@ $(document).ready(function() {
         $('.past-host__hprof').css('display', 'flex');
       })
     });
+
+
+// artSpeak
+$(document).ready(()=>{
+  $('#checkDetailAS').click(()=>{
+    $('.forhide-conbtn__sp').hide(500);
+    $('.card-contaner__speak').hide(500);
+    var css = $('.post-detail__arsp').css('flex-direction', 'column').hide();
+    css.css('text-align', 'center');
+    $('.img-cont__dspaek').css('width','100%');
+    $('.txt-conatne___dspeak').css('width', '100%');
+    css.fadeIn(1000);
+    $('#backASBtn').show(5000);
+    $('#checkDetailAS').hide();
+    $('.more-detail__aspea').show(1000);
+    });
+
+    $('#backASBtn').click(()=>{
+      location.reload(true);
+    });
+
+
+});
+
     </script>
 </head>
 
