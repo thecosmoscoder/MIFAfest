@@ -81,6 +81,31 @@
         color: rgb(87, 87, 87);
         text-decoration: none;
     }
+
+    .fisrt-mainsect__speak{
+        padding-top: 6rem;
+        padding-left: 4%;
+        display: flex;
+        justify-content:space-between;
+    }
+    .currat-calls__speak img{
+        width: 40%;
+        border-radius: 10px;
+    }
+    .currat-calls__speak .span{
+        width: 50%;
+    }
+    .txt-container__speak{
+        width: 45%;
+        color: #444;
+    }
+    .txt-container__speak h1{
+        color: #222;
+    }
+
+    .control-btn__sp hr{
+        width: 90%;
+    }
     </style>
 {% include "../Header/Header.html" %}
 <!--
@@ -98,10 +123,23 @@
     <span class="material-symbols-outlined">arrow_forward_ios</span>
 </section>
 -->
+<section class="fisrt-mainsect__speak">
+    <div class="txt-container__speak">
+        <h1>Curret ArtCalls</h1>
+        <span>Check out what artspeak rolling.</span>
+    </div>
+        <div class="currat-calls__speak">
+        <img src="{% static './images/maxresdefault.jpg' %}" alt="" />
+        <h3>Name art speak</h3>
+        <div class="span"><span>little detail Name art speak Name art speak Name art speak Name art speak Name art speak Name art speak</span></div>
+    </div>
+</section>
+
+
 
 <section class="control-btn__sp">
     <div class="div-in-btn__home">
-    <span class="mifa-btn__home" id="speaHightli">Highlight</span>
+    <span class="mifa-btn__home" id="speaHightli">Currect Art Calls</span>
     
     </div>
     <hr />
