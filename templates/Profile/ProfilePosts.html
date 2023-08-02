@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .post-in___prof{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .mo-container__prof video{
+            width: 100%;
+        }
+
+
+video::-webkit-media-controls-play-button {
+    display: block;
+}
+
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display, 
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-toggle-closed-captions-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-fullscreen-button
+{
+  display: none !important;
+}
+
+.mo-container__prof{
+    width: 20%;
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(139, 139, 139, 0.078);
+    border-radius: 3px;
+}
+.mo-container__prof span{
+    font-size: 9em;
+    cursor: pointer;
+}
+
+    </style>
+
+<section class="post-in___prof">
+    <div class="mo-container__prof">
+        <video controls="controls" loop onmouseover="this.play()" onmouseout="this.pause()" >
+            <source src="https://bigwalldecor.com/wp-content/uploads/2023/03/Large-Wall-Art-Surf-Video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="mo-container__prof">
+        <span class="material-symbols-outlined">add</span>
+    </div>
+    <div class="mo-container__prof">
+        <span class="material-symbols-outlined">add</span>
+    </div>
+    <div class="mo-container__prof">
+        <span class="material-symbols-outlined">add</span>
+    </div>
+</section>
+{% endblock content %}  
+
