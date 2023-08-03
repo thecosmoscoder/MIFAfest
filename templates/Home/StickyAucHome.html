@@ -35,6 +35,12 @@
                 font-size: x-large;
                 z-index: 199;
         }
+    
+        @media only screen and (max-width: 975px) {
+                .aucfixedfix_hide{
+                        display:none;
+                }
+}
     </style>
 
   <section class="sticky-secti__aucarionhome">
@@ -44,7 +50,9 @@
                 <span>this MIFAaucation ends: </span>
                 <span> <div class="countdown"> </div></span>
         </div></a>
-        <span>MIFAaucation : <span>mahla mola - desert</span></span>
+        <div class="aucfixedfix_hide">
+                <span>MIFAaucation : <span>mahla mola - desert</span></span>
+        </div>
         <div class="close-btn___fixauca"><span class="material-symbols-outlined">close</span></div>
   </section>
 {% endblock content %}  
