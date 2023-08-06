@@ -32,6 +32,12 @@
                 cursor: pointer;
                 font-size: x-large;
         }
+
+@media only screen and (max-width: 975px) {
+        .hide-responseifix__auc{
+                display:none;
+        }
+}
     </style>
 
   <section class="sticky-secti__aucarion">
@@ -41,7 +47,7 @@
                 <span>this MIFAaucation ends: </span>
                 <span> <div class="countdown"> </div></span>
         </div>
-        <span>MIFAaucation : <span>mahla mola - desert</span></span>
+        <div class="hide-responseifix__auc"><span>MIFAaucation : <span>mahla mola - desert</span></span></div>
         <div class="close-btn___fixauca"><span class="material-symbols-outlined">close</span></div>
   </section>
 {% endblock content %}  
