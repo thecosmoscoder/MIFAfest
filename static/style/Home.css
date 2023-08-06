@@ -361,6 +361,12 @@ footer h5:hover{
 }
 
 
+@media only screen and (max-width: 975px) {
+  footer{
+    flex-wrap: wrap;
+  }
+}
+
 /* footer  style*/
 
 
