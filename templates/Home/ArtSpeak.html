@@ -21,6 +21,15 @@
         .mifa-gift__home p{
             color: #a1a1a1;
         }
+        .img-now-contaner__home{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+        .img-now-contaner__home img{
+            width: 50%;
+        }
     </style>
 
 <section class="mifa-gift__home">
@@ -29,7 +38,16 @@
 <hr />
 
 <h1>ArtSpeak</h1>
-<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
+<p>Click on image to know what's goning on!</p>
+</div>
+
+
+<div class="img-now-contaner__home"> 
+    
+    <img src="{% static './images/maxresdefault.jpg' %}" alt="" />
+    <h1>ArtSpeak Subject</h1>
+    <a href="{% url 'artspeak' %}"><span>click here to see artspeak.</span></a>
+
 </div>
 </section>
 {% endblock content %}  

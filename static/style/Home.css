@@ -365,6 +365,9 @@ footer h5:hover{
   footer{
     flex-wrap: wrap;
   }
+  .mifa-gift__home{
+    flex-direction: column;
+  }
 }
 
 /* footer  style*/
