@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <style type="text/css">
+        .third-container__as{
+            display: flex;
+            padding: 20px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .classjquery{
+            height: 100%;
+            transition: all 0.9;
+        }
+        .img-cont__dspaethird{
+            width: 70%;
+            overflow:hidden;
+        }
+        .txt-detail___conrasp{
+            width: 20%;
+            margin: 0 10px 0 10px;
+
+        }
+
+        .block-container-thir__as{
+            width: 40%;
+            display: flex;
+        }
+
+        .absolute-claasthird__as{
+            width: 100%;
+            background-color: #ffffff61;
+            position: absolute;
+            color: black;
+            border-radius: 20px;
+            height: 10px;
+            margin-top: -10px;
+            
+            
+        }
+        .abs-down-contaner{
+            display: flex;
+            justify-content: center;
+        }
+        .abs-down-contaner span{
+            font-size: 2em;
+            background-color: #ffffff61;
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px solid #3f3f3f4a ;
+            margin-top: -3vh;
+            cursor: pointer;
+        }
+
+       
+    </style>
+
+<section class="third-container__as">
+    <div class="block-container-thir__as">
+        <div class="txt-detail___conrasp">
+            <h1>Lorem somethin</h1>
+            <span>You can Win, lorem.</span>
+        </div>
+        <div class="img-cont__dspaethird">
+            <img src="{% static './images/artsp.webp' %}" alt="" />
+        </div>
+    </div>
+
+    <div class="block-container-thir__as">
+        <div class="txt-detail___conrasp">
+            <h1>Lorem somethin</h1>
+            <span>You can Win, lorem.</span>
+        </div>
+        <div class="img-cont__dspaethird">
+            <img src="{% static './images/artsp.webp' %}" alt="" />
+        </div>
+    </div>
+
+</section>
+
+<div class="absolute-claasthird__as"> 
+    <div class="abs-down-contaner">
+        <span class="material-symbols-outlined">expand_more</span>
+    </div>
+
+    
+</div>
+{% endblock content %}  
+

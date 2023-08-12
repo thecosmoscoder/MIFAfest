@@ -384,6 +384,16 @@ $('#beforeArtistDe').click(function() {
 });
 
 
+// art speak
+$(document).ready(()=>{
+  var btnbigger = $('.abs-down-contaner span');
+  var shbigsec = $('.third-container__as');
+  btnbigger.click(()=>{
+    shbigsec.addClass('classjquery');
+    btnbigger.text('expand_less')
+  })
+})
+
 
 // fixed auvation
 
@@ -495,7 +505,7 @@ $(document).ready(()=>{
     css.fadeIn(1000);
     $('#backASBtn').show(5000);
     $('#checkDetailAS').hide();
-    $('.more-detail__aspea').show(1000);
+    $('.more-detail__aspea').css('display', 'flex');
     });
 
     $('#backASBtn').click(()=>{
