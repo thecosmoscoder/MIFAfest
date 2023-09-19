@@ -47,6 +47,7 @@
         .right-div-cont__hostd{
             width: 20%;
             margin-left: 20px;
+            font-size: x-large;
         }
 
         .right-div-cont__hostd p{
@@ -77,14 +78,37 @@
         .mifahost-deta___detail hr{
             width: 80%;            
         }
+
+        .Request-section{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .another-showbtn__homeauc{
+            padding: 10px 20px 10px 20px; 
+            margin-top: 20px;
+            font-size: large;
+            border-radius: 10px;
+            font-family: inherit;
+            background-color: #fff;
+            cursor: pointer;
+
+
+        }
+        .another-showbtn__homeauc:hover{
+            color: #fff;
+            background-color: black;
+        }
+
     </style>
 {% include "../Header/Header.html" %}
 
 <section class="head-host-detail__host">
 
     <div class="txt-conta__detailhost">
-        <h5>Residence, Tehran</h5>
-        <h1>Shirana Shahbazi</h1>
+        <h1>Color Of God, MIFAhost</h1>
+        <h5>Shirana Shahbazi</h5>
     </div>
 
     <div class="right-headdeta__host">
@@ -121,6 +145,13 @@ For more information, please contact Fabio Pink: fabio@peterkilchmann.com</span>
 </section>
 <div class="mifahost-deta___detail">
 <hr />
+</div>
+<section class="Request-section">
+    <button class="another-showbtn__homeauc">Request For Meeting</button>
+    
+</section>
+<div class="mifahost-deta___detail">
+    <hr />
 </div>
 {% include "./MIFAhostDPoster.html" %}
 {% include "../Footer/Footer.html" %}
