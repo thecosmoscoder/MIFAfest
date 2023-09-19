@@ -45,22 +45,21 @@ box-shadow: 0px 10px 40px 11px rgba(0,0,0,0.1);
 
 .card__avatar {
   position: absolute;
-  width: 114px;
-  height: 114px;
+  width: 190px;
+  height: 190px;
   background: var(--bg-color);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: calc(50% - 57px);
-   width: 100px;
-  height: 100px;
+  top: calc(20% - 57px);
+
   overflow: hidden;
   border: #fff 6px solid;
 }
 
 .card__avatar img {
-  width: 100px;
+  width: 200px;
 }
 
 .card__title {
@@ -115,13 +114,58 @@ box-shadow: 0px 10px 40px 11px rgba(0,0,0,0.1);
   color: #fff;
   background-color: #000;
 }
+.style-select___btncolo select {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0);
+  &:focus, &:active {
+    outline: 0;
+   
+  }
+}
+
+.intro-sect__artist hr{
+  width: 80%;
+  margin-bottom: 40px;
+}
+.intro-sect__artist h3 {
+  color: #666;
+}
     </style>
 
 
 <section class="intro-sect__artist">
-<h1>Get Know Our Girl!</h1>
+<h1>Get Know Our Artists!</h1>
 <h3>know more about our artists to beatify your world!</h3>
 
+<div class="style-select___btncolo">
+  <select>
+    <option value="" selected="selected" disabled="disabled">Filter...</option>
+    <option value="1">Painting</option>
+    <option value="2">Sculpture</option>
+    <option value="3">Photography</option>
+    <option value="4">Digital Art</option>
+    <option value="5">Drawing</option>
+    <option value="5">Calligraphy</option>
+    <option value="5">Mixed Media</option>
+    <option value="5">Printmaking</option>
+    <option value="5">Textile Art</option>
+    <option value="5">Installation Art</option>
+    <option value="5">Jewelry and luxury Art</option>
+    <option value="5">Performance Art</option>
+    <option value="5">Literary Art</option>
+  </select>
+  
+  </div>
+  <hr />
 <div class="card-container___artist">
 
     <div>
