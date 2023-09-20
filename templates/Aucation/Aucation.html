@@ -133,6 +133,32 @@
         }
 }
 
+
+.artwork-detail__section{
+  margin: 3%;
+  border: #a1a1a1a0 1px solid;
+  border-radius: 3px;
+  
+}
+
+
+.artwork-title__desc{
+  border-bottom: 1px #a1a1a1a0 solid;
+  padding: 20px;
+  color: #444;
+}
+
+.artwork-property{
+  padding: 10px;
+  color: #777;
+}
+.artwork-property span{
+  margin: 0 10px 0 10px;
+}
+
+.proper-conterner{
+  padding: 10px;
+}
     </style>
     {% include "../Header/Header.html" %}
 
@@ -168,6 +194,32 @@
 </div>
 <div class="hr-cont__auca"><hr /></div>
 
+<section class="artwork-detail__section">
+  <div class="artwork-title__desc">
+    <h1>Property from the Estate of Dr. and Mrs. Herbert Gursky</h1>
+  </div>
+  
+  <div class="proper-conterner">
+    <div class="artwork-property">
+      <span>material: </span>
+      <span>Cast plaster with acrylic paint</span>
+    </div>
+
+    <div class="artwork-property">
+      <span>size: </span>
+      <span>8 1/4 × 7 1/4 × 6 in | 21 × 18.4 × 15.2 cm</span>
+    </div>
+
+    <div class="artwork-property">
+      <span>Signature: </span>
+      <span>Signed and numbered 27/100 in ink; incised and dated</span>
+    </div>
+
+  </div>
+</section>
+
+
+{% include "./ProfileCheck.html" %}
 <br />
 <br />
 <br />

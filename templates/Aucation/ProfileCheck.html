@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  
+<style>
+
+.artwork-detail__section{
+  margin: 3%;
+  border: #a1a1a1a0 1px solid;
+  border-radius: 3px;
+  
+}
+
+
+.artwork-title__desc{
+  border-bottom: 1px #a1a1a1a0 solid;
+  padding: 20px;
+  color: #444;
+}
+
+.artwork-property{
+  padding: 10px;
+  color: #777;
+}
+.artwork-property span{
+  margin: 0 10px 0 10px;
+}
+
+.proper-conterner{
+  padding: 10px;
+}
+
+.artwork-title__desc img{
+    height: 100%;
+}
+.prof-detail-conter {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px 0 20px 0;
+}
+
+.flex-sjjk{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.flex-sjjk h1{
+    margin-left: 20px;
+}
+
+.chexkout-profilr-btn{
+    position: absolute;
+    right: 10%;
+}
+    </style>
+
+
+
+<section class="artwork-detail__section">
+  <div class="artwork-title__desc flex-sjjk">
+    <div class="prof-detail-conter">
+    <img src="{% static './images/ex-pro.jpeg'%}" alt="" />
+    </div>
+    <h1>Mahala mah</h1>
+
+    <button class="chexkout-profilr-btn">
+        Check Out Profile
+    </button>
+  </div>
+  
+  <div class="proper-conterner">
+    <div class="artwork-property">
+      <span>Currect Aucation: </span>
+      <span>Property from the Estate of Dr. and Mrs</span>
+    </div>
+
+
+  </div>
+</section>
+
+
+{% endblock content %}  
